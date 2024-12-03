@@ -18,5 +18,13 @@
         {
             return a / b;
         }
+        public static double CalcPower(double a, double b)
+        {
+            return Math.Pow(a,b);
+        }
+        public static double CalcRoot(double a, double b)
+        {
+            return Math.Pow(a, 1 / b);
+        }
     }
 }

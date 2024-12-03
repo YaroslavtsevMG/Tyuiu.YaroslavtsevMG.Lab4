@@ -34,7 +34,6 @@
             NameCalcLabel = new Label();
             SideBarPanel = new Panel();
             BotButtonsPanel = new TableLayoutPanel();
-            AboutButton = new Button();
             TopBottonPanel = new TableLayoutPanel();
             ToNDSCalcButton = new Button();
             ToConversionCalcButton = new Button();
@@ -46,7 +45,6 @@
             ControlPanel = new Panel();
             TopPanel.SuspendLayout();
             SideBarPanel.SuspendLayout();
-            BotButtonsPanel.SuspendLayout();
             TopBottonPanel.SuspendLayout();
             SuspendLayout();
             // 
@@ -100,7 +98,6 @@
             // 
             BotButtonsPanel.ColumnCount = 1;
             BotButtonsPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            BotButtonsPanel.Controls.Add(AboutButton, 0, 0);
             BotButtonsPanel.Dock = DockStyle.Bottom;
             BotButtonsPanel.Location = new Point(0, 393);
             BotButtonsPanel.Name = "BotButtonsPanel";
@@ -108,16 +105,6 @@
             BotButtonsPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             BotButtonsPanel.Size = new Size(200, 58);
             BotButtonsPanel.TabIndex = 1;
-            // 
-            // AboutButton
-            // 
-            AboutButton.Dock = DockStyle.Fill;
-            AboutButton.Location = new Point(3, 3);
-            AboutButton.Name = "AboutButton";
-            AboutButton.Size = new Size(194, 52);
-            AboutButton.TabIndex = 0;
-            AboutButton.Text = "О программе";
-            AboutButton.UseVisualStyleBackColor = true;
             // 
             // TopBottonPanel
             // 
@@ -158,7 +145,7 @@
             ToConversionCalcButton.Name = "ToConversionCalcButton";
             ToConversionCalcButton.Size = new Size(194, 28);
             ToConversionCalcButton.TabIndex = 2;
-            ToConversionCalcButton.Text = "перевода";
+            ToConversionCalcButton.Text = "конвертация";
             ToConversionCalcButton.UseVisualStyleBackColor = true;
             ToConversionCalcButton.Click += ToConversionCalcButton_Click;
             // 
@@ -228,7 +215,6 @@
             Text = "Form1";
             TopPanel.ResumeLayout(false);
             SideBarPanel.ResumeLayout(false);
-            BotButtonsPanel.ResumeLayout(false);
             TopBottonPanel.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -242,7 +228,6 @@
         private System.Windows.Forms.Timer CloseTimer;
         private TableLayoutPanel TopBottonPanel;
         private TableLayoutPanel BotButtonsPanel;
-        private Button AboutButton;
         private Button ToOrdinaryCalcButton;
         private Button ToArithmeticCalcButton;
         private Button ToConversionCalcButton;

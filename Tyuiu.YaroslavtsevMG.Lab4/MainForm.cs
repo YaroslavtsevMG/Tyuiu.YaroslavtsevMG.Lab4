@@ -18,8 +18,7 @@
             state = State.ordinary;
             SideBarPanel.Location = new Point(-200, 0);
             NameCalcLabel.Text = "Обычный";
-            //currentUserControl = new OrdinaryCalcControl { Dock = DockStyle.Fill };
-            currentUserControl = new UserControl();
+            currentUserControl = new OrdinaryCalcControl { Dock = DockStyle.Fill };
             ControlPanel.Controls.Add(currentUserControl);
         }
 
@@ -33,7 +32,7 @@
         {
             if (SideBarPanel.Location.X < 0)
             {
-                SideBarPanel.Location = new Point(SideBarPanel.Location.X + 3, SideBarPanel.Location.Y);
+                SideBarPanel.Location = new Point(SideBarPanel.Location.X + 10, SideBarPanel.Location.Y);
                 return;
             }
             OpenTimer.Enabled = false;
@@ -43,7 +42,7 @@
         {
             if (SideBarPanel.Location.X > -200)
             {
-                SideBarPanel.Location = new Point(SideBarPanel.Location.X - 3, SideBarPanel.Location.Y);
+                SideBarPanel.Location = new Point(SideBarPanel.Location.X - 10, SideBarPanel.Location.Y);
                 return;
             }
             CloseTimer.Enabled = false;
@@ -65,22 +64,51 @@
             currentUserControl= new OrdinaryCalcControl { Dock = DockStyle.Fill };
             ControlPanel.Controls.Add(currentUserControl);
             CloseTimer.Enabled = true;
+            OpenTimer.Enabled = false;
+            NameCalcLabel.Text = "Обычный";
 
         }
 
         private void ToArithmeticCalcButton_Click(object sender, EventArgs e)
         {
-
+            if (currentUserControl.GetType() == typeof(ArithmeticCalcControl))
+            {
+                return;
+            }
+            ControlPanel.Controls.Remove(currentUserControl);
+            currentUserControl = new ArithmeticCalcControl { Dock = DockStyle.Fill };
+            ControlPanel.Controls.Add(currentUserControl);
+            CloseTimer.Enabled = true;
+            OpenTimer.Enabled = false;
+            NameCalcLabel.Text = "Расширенный";
         }
 
         private void ToConversionCalcButton_Click(object sender, EventArgs e)
         {
-
+            if (currentUserControl.GetType() == typeof(ConversionCalcControl))
+            {
+                return;
+            }
+            ControlPanel.Controls.Remove(currentUserControl);
+            currentUserControl = new ConversionCalcControl { Dock = DockStyle.Fill };
+            ControlPanel.Controls.Add(currentUserControl);
+            CloseTimer.Enabled = true;
+            OpenTimer.Enabled = false;
+            NameCalcLabel.Text = "Конвертация";
         }
 
         private void ToNDSCalcButton_Click(object sender, EventArgs e)
         {
-
+            if (currentUserControl.GetType() == typeof(NDSCalcControl))
+            {
+                return;
+            }
+            ControlPanel.Controls.Remove(currentUserControl);
+            currentUserControl = new NDSCalcControl { Dock = DockStyle.Fill };
+            ControlPanel.Controls.Add(currentUserControl);
+            CloseTimer.Enabled = true;
+            OpenTimer.Enabled = false;
+            NameCalcLabel.Text = "Рассчет НДС";
         }
     }
 }

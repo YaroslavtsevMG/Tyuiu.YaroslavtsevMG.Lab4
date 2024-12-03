@@ -2,21 +2,53 @@
 {
     public static class ConversionCalc
     {
-        public static double CalcSumma(double a, double b)
+        public static double FromByteToKilobyte(double x)
         {
-            return a + b;
+            return x/1024;
         }
-        public static double CalcDifference(double a, double b)
+        public static double FromByteToMegabyte(double x)
         {
-            return a - b;
+            return x / 1024/1024;
         }
-        public static double CalcMultiplication(double a, double b)
+        public static double FromByteToGigabyte(double x)
         {
-            return a * b;
+            return x / 1024 / 1024/1024;
         }
-        public static double CalcQuotient(double a, double b)
+        public static double FromByteToTerrabyte(double x)
         {
-            return a / b;
+            return x / 1024 / 1024 / 1024/1024;
+        }
+        public static double FromByteToPetabyte(double x)
+        {
+            return x / 1024 / 1024 / 1024 / 1024/1024;
+        }
+        public static double FromByteToEkzobyte(double x)
+        {
+            return x / 1024 / 1024 / 1024 / 1024 / 1024/1024;
+        }
+        public static double FromEkzobyteToByte(double x)
+        {
+            return x * 1024 * 1024 * 1024 * 1024 * 1024 * 1024;
+        }
+        public static double FromPetabyteToByte(double x)
+        {
+            return x * 1024 * 1024 * 1024 * 1024 * 1024;
+        }
+        public static double FromTerrabyteToByte(double x)
+        {
+            return x * 1024 * 1024 * 1024 * 1024;
+        }
+        public static double FromGigabyteToByte(double x)
+        {
+            return x * 1024 * 1024 * 1024;
+        }
+        public static double FromMegabyteToByte(double x)
+        {
+            return x * 1024 * 1024;
+        }
+        public static double FromKilobyteToByte(double x)
+        {
+            return x * 1024;
         }
     }
 }
