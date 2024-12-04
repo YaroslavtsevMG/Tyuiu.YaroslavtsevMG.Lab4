@@ -17,7 +17,7 @@
             InitializeComponent();
             state = State.ordinary;
             SideBarPanel.Location = new Point(-200, 0);
-            NameCalcLabel.Text = "Обычный";
+            NameCalcLabelYMG.Text = "Обычный";
             currentUserControl = new OrdinaryCalcControl { Dock = DockStyle.Fill };
             ControlPanel.Controls.Add(currentUserControl);
         }
@@ -56,16 +56,16 @@
 
         private void ToOrdinaryCalcButton_Click(object sender, EventArgs e)
         {
-            if(currentUserControl.GetType()==typeof(OrdinaryCalcControl))
+            if (currentUserControl.GetType() == typeof(OrdinaryCalcControl))
             {
                 return;
             }
             ControlPanel.Controls.Remove(currentUserControl);
-            currentUserControl= new OrdinaryCalcControl { Dock = DockStyle.Fill };
+            currentUserControl = new OrdinaryCalcControl { Dock = DockStyle.Fill };
             ControlPanel.Controls.Add(currentUserControl);
             CloseTimer.Enabled = true;
             OpenTimer.Enabled = false;
-            NameCalcLabel.Text = "Обычный";
+            NameCalcLabelYMG.Text = "Обычный";
 
         }
 
@@ -80,7 +80,7 @@
             ControlPanel.Controls.Add(currentUserControl);
             CloseTimer.Enabled = true;
             OpenTimer.Enabled = false;
-            NameCalcLabel.Text = "Расширенный";
+            NameCalcLabelYMG.Text = "Расширенный";
         }
 
         private void ToConversionCalcButton_Click(object sender, EventArgs e)
@@ -94,7 +94,7 @@
             ControlPanel.Controls.Add(currentUserControl);
             CloseTimer.Enabled = true;
             OpenTimer.Enabled = false;
-            NameCalcLabel.Text = "Конвертация";
+            NameCalcLabelYMG.Text = "Конвертация";
         }
 
         private void ToNDSCalcButton_Click(object sender, EventArgs e)
@@ -108,7 +108,21 @@
             ControlPanel.Controls.Add(currentUserControl);
             CloseTimer.Enabled = true;
             OpenTimer.Enabled = false;
-            NameCalcLabel.Text = "Рассчет НДС";
+            NameCalcLabelYMG.Text = "Рассчет НДС";
+        }
+
+        private void AboutButtonYMG_Click(object sender, EventArgs e)
+        {
+
+            MessageBox.Show(
+        "Разработал: Ярославцев М.Г. МКМб-22-1\n" +
+        "Функционал:\n" +
+        "Обычный калькулятор\n" +
+        "Расширенный калькулятор\n" +
+        "Калькулятор перевода систем счисления для размера информации\n" +
+        "Калькулятор НДС\n",
+        "О программе",
+        MessageBoxButtons.OK);
         }
     }
 }

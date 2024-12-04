@@ -30,59 +30,63 @@
         {
             components = new System.ComponentModel.Container();
             TopPanel = new Panel();
-            SideBarButton = new Button();
-            NameCalcLabel = new Label();
+            SideBarButtonYMG = new Button();
+            NameCalcLabelYMG = new Label();
             SideBarPanel = new Panel();
             BotButtonsPanel = new TableLayoutPanel();
+            AboutButtonYMG = new Button();
             TopBottonPanel = new TableLayoutPanel();
-            ToNDSCalcButton = new Button();
-            ToConversionCalcButton = new Button();
-            ToArithmeticCalcButton = new Button();
-            ToOrdinaryCalcButton = new Button();
-            CloseSideBarButton = new Button();
+            ToNDSCalcButtonYMG = new Button();
+            ToConversionCalcButtonYMG = new Button();
+            ToArithmeticCalcButtonYMG = new Button();
+            ToOrdinaryCalcButtonYMG = new Button();
+            CloseSideBarButtonYMG = new Button();
             OpenTimer = new System.Windows.Forms.Timer(components);
             CloseTimer = new System.Windows.Forms.Timer(components);
             ControlPanel = new Panel();
             TopPanel.SuspendLayout();
             SideBarPanel.SuspendLayout();
+            BotButtonsPanel.SuspendLayout();
             TopBottonPanel.SuspendLayout();
             SuspendLayout();
             // 
             // TopPanel
             // 
             TopPanel.BackColor = SystemColors.ControlDarkDark;
-            TopPanel.Controls.Add(SideBarButton);
-            TopPanel.Controls.Add(NameCalcLabel);
+            TopPanel.Controls.Add(SideBarButtonYMG);
+            TopPanel.Controls.Add(NameCalcLabelYMG);
             TopPanel.Dock = DockStyle.Top;
             TopPanel.Location = new Point(0, 0);
             TopPanel.Name = "TopPanel";
             TopPanel.Size = new Size(800, 40);
             TopPanel.TabIndex = 0;
             // 
-            // SideBarButton
+            // SideBarButtonYMG
             // 
-            SideBarButton.BackColor = SystemColors.ControlDarkDark;
-            SideBarButton.BackgroundImageLayout = ImageLayout.Center;
-            SideBarButton.Dock = DockStyle.Left;
-            SideBarButton.ForeColor = SystemColors.ControlLightLight;
-            SideBarButton.Location = new Point(0, 0);
-            SideBarButton.Name = "SideBarButton";
-            SideBarButton.Size = new Size(75, 40);
-            SideBarButton.TabIndex = 1;
-            SideBarButton.Text = "меню";
-            SideBarButton.UseVisualStyleBackColor = false;
-            SideBarButton.Click += SideBarButton_Click;
+            SideBarButtonYMG.BackColor = SystemColors.ControlDarkDark;
+            SideBarButtonYMG.BackgroundImageLayout = ImageLayout.Center;
+            SideBarButtonYMG.Dock = DockStyle.Left;
+            SideBarButtonYMG.ForeColor = SystemColors.ControlLightLight;
+            SideBarButtonYMG.Location = new Point(0, 0);
+            SideBarButtonYMG.Name = "SideBarButtonYMG";
+            SideBarButtonYMG.Size = new Size(75, 40);
+            SideBarButtonYMG.TabIndex = 1;
+            SideBarButtonYMG.Text = "меню";
+            SideBarButtonYMG.UseVisualStyleBackColor = false;
+            SideBarButtonYMG.Click += SideBarButton_Click;
             // 
-            // NameCalcLabel
+            // NameCalcLabelYMG
             // 
-            NameCalcLabel.Dock = DockStyle.Right;
-            NameCalcLabel.ForeColor = SystemColors.ControlLightLight;
-            NameCalcLabel.Location = new Point(688, 0);
-            NameCalcLabel.Name = "NameCalcLabel";
-            NameCalcLabel.Size = new Size(112, 40);
-            NameCalcLabel.TabIndex = 0;
-            NameCalcLabel.Text = "какой именно калькулятор";
-            NameCalcLabel.TextAlign = ContentAlignment.MiddleCenter;
+            NameCalcLabelYMG.AutoSize = true;
+            NameCalcLabelYMG.Dock = DockStyle.Right;
+            NameCalcLabelYMG.Font = new Font("Segoe UI", 15.75F);
+            NameCalcLabelYMG.ForeColor = SystemColors.ControlLightLight;
+            NameCalcLabelYMG.Location = new Point(528, 0);
+            NameCalcLabelYMG.Name = "NameCalcLabelYMG";
+            NameCalcLabelYMG.Size = new Size(272, 30);
+            NameCalcLabelYMG.TabIndex = 0;
+            NameCalcLabelYMG.Text = "какой именно калькулятор";
+            NameCalcLabelYMG.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // SideBarPanel
             // 
@@ -98,6 +102,7 @@
             // 
             BotButtonsPanel.ColumnCount = 1;
             BotButtonsPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            BotButtonsPanel.Controls.Add(AboutButtonYMG, 0, 0);
             BotButtonsPanel.Dock = DockStyle.Bottom;
             BotButtonsPanel.Location = new Point(0, 393);
             BotButtonsPanel.Name = "BotButtonsPanel";
@@ -106,15 +111,26 @@
             BotButtonsPanel.Size = new Size(200, 58);
             BotButtonsPanel.TabIndex = 1;
             // 
+            // AboutButtonYMG
+            // 
+            AboutButtonYMG.Dock = DockStyle.Fill;
+            AboutButtonYMG.Location = new Point(3, 3);
+            AboutButtonYMG.Name = "AboutButtonYMG";
+            AboutButtonYMG.Size = new Size(194, 52);
+            AboutButtonYMG.TabIndex = 0;
+            AboutButtonYMG.Text = "О программе";
+            AboutButtonYMG.UseVisualStyleBackColor = true;
+            AboutButtonYMG.Click += AboutButtonYMG_Click;
+            // 
             // TopBottonPanel
             // 
             TopBottonPanel.ColumnCount = 1;
             TopBottonPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            TopBottonPanel.Controls.Add(ToNDSCalcButton, 0, 4);
-            TopBottonPanel.Controls.Add(ToConversionCalcButton, 0, 3);
-            TopBottonPanel.Controls.Add(ToArithmeticCalcButton, 0, 2);
-            TopBottonPanel.Controls.Add(ToOrdinaryCalcButton, 0, 1);
-            TopBottonPanel.Controls.Add(CloseSideBarButton, 0, 0);
+            TopBottonPanel.Controls.Add(ToNDSCalcButtonYMG, 0, 4);
+            TopBottonPanel.Controls.Add(ToConversionCalcButtonYMG, 0, 3);
+            TopBottonPanel.Controls.Add(ToArithmeticCalcButtonYMG, 0, 2);
+            TopBottonPanel.Controls.Add(ToOrdinaryCalcButtonYMG, 0, 1);
+            TopBottonPanel.Controls.Add(CloseSideBarButtonYMG, 0, 0);
             TopBottonPanel.Dock = DockStyle.Top;
             TopBottonPanel.Location = new Point(0, 0);
             TopBottonPanel.Name = "TopBottonPanel";
@@ -127,62 +143,62 @@
             TopBottonPanel.Size = new Size(200, 174);
             TopBottonPanel.TabIndex = 0;
             // 
-            // ToNDSCalcButton
+            // ToNDSCalcButtonYMG
             // 
-            ToNDSCalcButton.Dock = DockStyle.Fill;
-            ToNDSCalcButton.Location = new Point(3, 139);
-            ToNDSCalcButton.Name = "ToNDSCalcButton";
-            ToNDSCalcButton.Size = new Size(194, 32);
-            ToNDSCalcButton.TabIndex = 3;
-            ToNDSCalcButton.Text = "рассчет НДС";
-            ToNDSCalcButton.UseVisualStyleBackColor = true;
-            ToNDSCalcButton.Click += ToNDSCalcButton_Click;
+            ToNDSCalcButtonYMG.Dock = DockStyle.Fill;
+            ToNDSCalcButtonYMG.Location = new Point(3, 139);
+            ToNDSCalcButtonYMG.Name = "ToNDSCalcButtonYMG";
+            ToNDSCalcButtonYMG.Size = new Size(194, 32);
+            ToNDSCalcButtonYMG.TabIndex = 3;
+            ToNDSCalcButtonYMG.Text = "Рассчет НДС";
+            ToNDSCalcButtonYMG.UseVisualStyleBackColor = true;
+            ToNDSCalcButtonYMG.Click += ToNDSCalcButton_Click;
             // 
-            // ToConversionCalcButton
+            // ToConversionCalcButtonYMG
             // 
-            ToConversionCalcButton.Dock = DockStyle.Fill;
-            ToConversionCalcButton.Location = new Point(3, 105);
-            ToConversionCalcButton.Name = "ToConversionCalcButton";
-            ToConversionCalcButton.Size = new Size(194, 28);
-            ToConversionCalcButton.TabIndex = 2;
-            ToConversionCalcButton.Text = "конвертация";
-            ToConversionCalcButton.UseVisualStyleBackColor = true;
-            ToConversionCalcButton.Click += ToConversionCalcButton_Click;
+            ToConversionCalcButtonYMG.Dock = DockStyle.Fill;
+            ToConversionCalcButtonYMG.Location = new Point(3, 105);
+            ToConversionCalcButtonYMG.Name = "ToConversionCalcButtonYMG";
+            ToConversionCalcButtonYMG.Size = new Size(194, 28);
+            ToConversionCalcButtonYMG.TabIndex = 2;
+            ToConversionCalcButtonYMG.Text = "Конвертация";
+            ToConversionCalcButtonYMG.UseVisualStyleBackColor = true;
+            ToConversionCalcButtonYMG.Click += ToConversionCalcButton_Click;
             // 
-            // ToArithmeticCalcButton
+            // ToArithmeticCalcButtonYMG
             // 
-            ToArithmeticCalcButton.Dock = DockStyle.Fill;
-            ToArithmeticCalcButton.FlatStyle = FlatStyle.System;
-            ToArithmeticCalcButton.Location = new Point(3, 71);
-            ToArithmeticCalcButton.Name = "ToArithmeticCalcButton";
-            ToArithmeticCalcButton.Size = new Size(194, 28);
-            ToArithmeticCalcButton.TabIndex = 1;
-            ToArithmeticCalcButton.Text = "расширенный";
-            ToArithmeticCalcButton.UseVisualStyleBackColor = true;
-            ToArithmeticCalcButton.Click += ToArithmeticCalcButton_Click;
+            ToArithmeticCalcButtonYMG.Dock = DockStyle.Fill;
+            ToArithmeticCalcButtonYMG.FlatStyle = FlatStyle.System;
+            ToArithmeticCalcButtonYMG.Location = new Point(3, 71);
+            ToArithmeticCalcButtonYMG.Name = "ToArithmeticCalcButtonYMG";
+            ToArithmeticCalcButtonYMG.Size = new Size(194, 28);
+            ToArithmeticCalcButtonYMG.TabIndex = 1;
+            ToArithmeticCalcButtonYMG.Text = "Расширенный";
+            ToArithmeticCalcButtonYMG.UseVisualStyleBackColor = true;
+            ToArithmeticCalcButtonYMG.Click += ToArithmeticCalcButton_Click;
             // 
-            // ToOrdinaryCalcButton
+            // ToOrdinaryCalcButtonYMG
             // 
-            ToOrdinaryCalcButton.Dock = DockStyle.Fill;
-            ToOrdinaryCalcButton.FlatStyle = FlatStyle.System;
-            ToOrdinaryCalcButton.Location = new Point(3, 37);
-            ToOrdinaryCalcButton.Name = "ToOrdinaryCalcButton";
-            ToOrdinaryCalcButton.Size = new Size(194, 28);
-            ToOrdinaryCalcButton.TabIndex = 0;
-            ToOrdinaryCalcButton.Text = "обыкновенный";
-            ToOrdinaryCalcButton.UseVisualStyleBackColor = true;
-            ToOrdinaryCalcButton.Click += ToOrdinaryCalcButton_Click;
+            ToOrdinaryCalcButtonYMG.Dock = DockStyle.Fill;
+            ToOrdinaryCalcButtonYMG.FlatStyle = FlatStyle.System;
+            ToOrdinaryCalcButtonYMG.Location = new Point(3, 37);
+            ToOrdinaryCalcButtonYMG.Name = "ToOrdinaryCalcButtonYMG";
+            ToOrdinaryCalcButtonYMG.Size = new Size(194, 28);
+            ToOrdinaryCalcButtonYMG.TabIndex = 0;
+            ToOrdinaryCalcButtonYMG.Text = "Обычный";
+            ToOrdinaryCalcButtonYMG.UseVisualStyleBackColor = true;
+            ToOrdinaryCalcButtonYMG.Click += ToOrdinaryCalcButton_Click;
             // 
-            // CloseSideBarButton
+            // CloseSideBarButtonYMG
             // 
-            CloseSideBarButton.Dock = DockStyle.Fill;
-            CloseSideBarButton.Location = new Point(3, 3);
-            CloseSideBarButton.Name = "CloseSideBarButton";
-            CloseSideBarButton.Size = new Size(194, 28);
-            CloseSideBarButton.TabIndex = 4;
-            CloseSideBarButton.Text = "меню";
-            CloseSideBarButton.UseVisualStyleBackColor = true;
-            CloseSideBarButton.Click += CloseSideBarButton_Click;
+            CloseSideBarButtonYMG.Dock = DockStyle.Fill;
+            CloseSideBarButtonYMG.Location = new Point(3, 3);
+            CloseSideBarButtonYMG.Name = "CloseSideBarButtonYMG";
+            CloseSideBarButtonYMG.Size = new Size(194, 28);
+            CloseSideBarButtonYMG.TabIndex = 4;
+            CloseSideBarButtonYMG.Text = "Закрыть боковое меню";
+            CloseSideBarButtonYMG.UseVisualStyleBackColor = true;
+            CloseSideBarButtonYMG.Click += CloseSideBarButton_Click;
             // 
             // OpenTimer
             // 
@@ -212,9 +228,11 @@
             Controls.Add(ControlPanel);
             Controls.Add(TopPanel);
             Name = "MainForm";
-            Text = "Form1";
+            Text = "Calculator";
             TopPanel.ResumeLayout(false);
+            TopPanel.PerformLayout();
             SideBarPanel.ResumeLayout(false);
+            BotButtonsPanel.ResumeLayout(false);
             TopBottonPanel.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -222,18 +240,19 @@
         #endregion
 
         private Panel TopPanel;
-        private Label NameCalcLabel;
+        private Label NameCalcLabelYMG;
         private Panel SideBarPanel;
         private System.Windows.Forms.Timer OpenTimer;
         private System.Windows.Forms.Timer CloseTimer;
         private TableLayoutPanel TopBottonPanel;
         private TableLayoutPanel BotButtonsPanel;
-        private Button ToOrdinaryCalcButton;
-        private Button ToArithmeticCalcButton;
-        private Button ToConversionCalcButton;
-        private Button ToNDSCalcButton;
-        private Button SideBarButton;
-        private Button CloseSideBarButton;
+        private Button ToOrdinaryCalcButtonYMG;
+        private Button ToArithmeticCalcButtonYMG;
+        private Button ToConversionCalcButtonYMG;
+        private Button ToNDSCalcButtonYMG;
+        private Button SideBarButtonYMG;
+        private Button CloseSideBarButtonYMG;
         private Panel ControlPanel;
+        private Button AboutButtonYMG;
     }
 }

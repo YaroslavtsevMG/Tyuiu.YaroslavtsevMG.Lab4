@@ -20,13 +20,13 @@ namespace Tyuiu.YaroslavtsevMG.Lab4
 
         private void FirstFormulaButton_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrEmpty(FirstFormulaFirstTextBox.Text) || string.IsNullOrEmpty(FirstFormulaSecondTextBox.Text))
+            if(string.IsNullOrEmpty(FirstFormulaFirstTextBoxYMG.Text) || string.IsNullOrEmpty(FirstFormulaSecondTextBoxYMG.Text))
             {
                 return;
             }
             double x;
             double y;
-            if(double.TryParse(FirstFormulaFirstTextBox.Text,out x) && double.TryParse(FirstFormulaSecondTextBox.Text, out y))
+            if(double.TryParse(FirstFormulaFirstTextBoxYMG.Text,out x) && double.TryParse(FirstFormulaSecondTextBoxYMG.Text, out y))
             {
                 var res=NDSCalc.Lib.NDSCalc.CalcFirstFormula(x, y);
                 ResultNDSLabel.Text = "Размер НДС: "+ Math.Round(res[0], 2).ToString();
@@ -36,13 +36,13 @@ namespace Tyuiu.YaroslavtsevMG.Lab4
 
         private void SecondFormulaButton_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(SecondFormulaFirstTextBox.Text) || string.IsNullOrEmpty(SecondFormulaSecondTextBox.Text))
+            if (string.IsNullOrEmpty(SecondFormulaFirstTextBox.Text) || string.IsNullOrEmpty(SecondFormulaSecondTextBoxYMG.Text))
             {
                 return;
             }
             double x;
             double y;
-            if (double.TryParse(SecondFormulaFirstTextBox.Text, out x) && double.TryParse(SecondFormulaSecondTextBox.Text, out y))
+            if (double.TryParse(SecondFormulaFirstTextBox.Text, out x) && double.TryParse(SecondFormulaSecondTextBoxYMG.Text, out y))
             {
                 var res = NDSCalc.Lib.NDSCalc.CalcSecondFormula(x, y);
                 ResultSummaNDSLabel.Text = "Размер НДС: "+Math.Round(res[0],2).ToString();

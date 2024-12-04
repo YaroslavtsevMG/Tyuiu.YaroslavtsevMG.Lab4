@@ -20,6 +20,9 @@ namespace Tyuiu.YaroslavtsevMG.Lab4
             arrConversion = new string[] { "байт", "килобайт", "мегабайт", "гигабайт", "терабайт", "петабайт", "экзабайт", };
             FromComboBox.Items.AddRange(arrConversion);
             ToComboBox.Items.AddRange(arrConversion);
+            FromComboBox.SelectedIndex = 0;
+            ToComboBox.SelectedIndex = 0;
+            FromTextBox.Text = "0";
         }
 
         private void ConversionButton_Click(object sender, EventArgs e)
@@ -31,6 +34,11 @@ namespace Tyuiu.YaroslavtsevMG.Lab4
             if(ToComboBox.SelectedIndex == FromComboBox.SelectedIndex)
             {
                 ResultLabel.Text = "Значение в выбранной единице измерения: " + FromTextBox.Text;
+            }
+            double z;
+            if(!double.TryParse(FromTextBox.Text,out z))
+            {
+                FromTextBox.Text = "0";
             }
             double bytes=0;
             switch(FromComboBox.SelectedIndex)

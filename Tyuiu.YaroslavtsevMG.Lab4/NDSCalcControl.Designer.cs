@@ -32,22 +32,22 @@
             SeporatorPanel = new TableLayoutPanel();
             SecondFormulaPanel = new TableLayoutPanel();
             SecondFormulaSecondPanel = new TableLayoutPanel();
-            NDSLabel2 = new Label();
-            SecondFormulaSecondTextBox = new TextBox();
+            NDSLabel2YMG = new Label();
+            SecondFormulaSecondTextBoxYMG = new TextBox();
             SecondFormulaFirstPanel = new TableLayoutPanel();
-            SummaNDSLabel = new Label();
+            SummaNDSLabelYMG = new Label();
             SecondFormulaFirstTextBox = new TextBox();
-            SecondFormulaButton = new Button();
+            SecondFormulaButtonYMG = new Button();
             ResultSummaNDSLabel = new Label();
             SummaWithNDSLabel = new Label();
             FirstFormulaPanel = new TableLayoutPanel();
-            FirstFormulaButton = new Button();
+            FirstFormulaButtonYMG = new Button();
             FirstFormulaFirstPanel = new TableLayoutPanel();
-            SummaLabel = new Label();
-            FirstFormulaFirstTextBox = new TextBox();
+            SummaLabelYMG = new Label();
+            FirstFormulaFirstTextBoxYMG = new TextBox();
             FirstFormulaSecondPanel = new TableLayoutPanel();
-            NDSLabel = new Label();
-            FirstFormulaSecondTextBox = new TextBox();
+            NDSLabelYMG = new Label();
+            FirstFormulaSecondTextBoxYMG = new TextBox();
             ResultNDSLabel = new Label();
             SummaWithoutNDSLabel = new Label();
             BackGrounPanel.SuspendLayout();
@@ -92,7 +92,7 @@
             SecondFormulaPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
             SecondFormulaPanel.Controls.Add(SecondFormulaSecondPanel, 0, 1);
             SecondFormulaPanel.Controls.Add(SecondFormulaFirstPanel, 0, 0);
-            SecondFormulaPanel.Controls.Add(SecondFormulaButton, 0, 2);
+            SecondFormulaPanel.Controls.Add(SecondFormulaButtonYMG, 0, 2);
             SecondFormulaPanel.Controls.Add(ResultSummaNDSLabel, 0, 3);
             SecondFormulaPanel.Controls.Add(SummaWithNDSLabel, 0, 4);
             SecondFormulaPanel.Dock = DockStyle.Fill;
@@ -112,8 +112,8 @@
             SecondFormulaSecondPanel.ColumnCount = 2;
             SecondFormulaSecondPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             SecondFormulaSecondPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            SecondFormulaSecondPanel.Controls.Add(NDSLabel2, 0, 0);
-            SecondFormulaSecondPanel.Controls.Add(SecondFormulaSecondTextBox, 1, 0);
+            SecondFormulaSecondPanel.Controls.Add(NDSLabel2YMG, 0, 0);
+            SecondFormulaSecondPanel.Controls.Add(SecondFormulaSecondTextBoxYMG, 1, 0);
             SecondFormulaSecondPanel.Dock = DockStyle.Fill;
             SecondFormulaSecondPanel.Location = new Point(3, 137);
             SecondFormulaSecondPanel.Name = "SecondFormulaSecondPanel";
@@ -122,32 +122,34 @@
             SecondFormulaSecondPanel.Size = new Size(601, 128);
             SecondFormulaSecondPanel.TabIndex = 4;
             // 
-            // NDSLabel2
+            // NDSLabel2YMG
             // 
-            NDSLabel2.AutoSize = true;
-            NDSLabel2.Dock = DockStyle.Fill;
-            NDSLabel2.ForeColor = SystemColors.ControlLightLight;
-            NDSLabel2.Location = new Point(3, 0);
-            NDSLabel2.Name = "NDSLabel2";
-            NDSLabel2.Size = new Size(294, 128);
-            NDSLabel2.TabIndex = 0;
-            NDSLabel2.Text = "Процентная ставка НДС";
-            NDSLabel2.TextAlign = ContentAlignment.TopRight;
+            NDSLabel2YMG.AutoSize = true;
+            NDSLabel2YMG.Dock = DockStyle.Fill;
+            NDSLabel2YMG.Font = new Font("Segoe UI", 15.75F);
+            NDSLabel2YMG.ForeColor = SystemColors.ControlLightLight;
+            NDSLabel2YMG.Location = new Point(3, 0);
+            NDSLabel2YMG.Name = "NDSLabel2YMG";
+            NDSLabel2YMG.Size = new Size(294, 128);
+            NDSLabel2YMG.TabIndex = 0;
+            NDSLabel2YMG.Text = "Процентная ставка НДС";
+            NDSLabel2YMG.TextAlign = ContentAlignment.TopRight;
             // 
-            // SecondFormulaSecondTextBox
+            // SecondFormulaSecondTextBoxYMG
             // 
-            SecondFormulaSecondTextBox.Dock = DockStyle.Fill;
-            SecondFormulaSecondTextBox.Location = new Point(303, 3);
-            SecondFormulaSecondTextBox.Name = "SecondFormulaSecondTextBox";
-            SecondFormulaSecondTextBox.Size = new Size(295, 23);
-            SecondFormulaSecondTextBox.TabIndex = 1;
+            SecondFormulaSecondTextBoxYMG.Dock = DockStyle.Fill;
+            SecondFormulaSecondTextBoxYMG.Font = new Font("Segoe UI", 15.75F);
+            SecondFormulaSecondTextBoxYMG.Location = new Point(303, 3);
+            SecondFormulaSecondTextBoxYMG.Name = "SecondFormulaSecondTextBoxYMG";
+            SecondFormulaSecondTextBoxYMG.Size = new Size(295, 35);
+            SecondFormulaSecondTextBoxYMG.TabIndex = 1;
             // 
             // SecondFormulaFirstPanel
             // 
             SecondFormulaFirstPanel.ColumnCount = 2;
             SecondFormulaFirstPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             SecondFormulaFirstPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            SecondFormulaFirstPanel.Controls.Add(SummaNDSLabel, 0, 0);
+            SecondFormulaFirstPanel.Controls.Add(SummaNDSLabelYMG, 0, 0);
             SecondFormulaFirstPanel.Controls.Add(SecondFormulaFirstTextBox, 1, 0);
             SecondFormulaFirstPanel.Dock = DockStyle.Fill;
             SecondFormulaFirstPanel.Location = new Point(3, 3);
@@ -157,36 +159,39 @@
             SecondFormulaFirstPanel.Size = new Size(601, 128);
             SecondFormulaFirstPanel.TabIndex = 3;
             // 
-            // SummaNDSLabel
+            // SummaNDSLabelYMG
             // 
-            SummaNDSLabel.AutoSize = true;
-            SummaNDSLabel.Dock = DockStyle.Fill;
-            SummaNDSLabel.ForeColor = SystemColors.ControlLightLight;
-            SummaNDSLabel.Location = new Point(3, 0);
-            SummaNDSLabel.Name = "SummaNDSLabel";
-            SummaNDSLabel.Size = new Size(294, 128);
-            SummaNDSLabel.TabIndex = 0;
-            SummaNDSLabel.Text = "Сумма продукта без НДС";
-            SummaNDSLabel.TextAlign = ContentAlignment.TopRight;
+            SummaNDSLabelYMG.AutoSize = true;
+            SummaNDSLabelYMG.Dock = DockStyle.Fill;
+            SummaNDSLabelYMG.Font = new Font("Segoe UI", 15.75F);
+            SummaNDSLabelYMG.ForeColor = SystemColors.ControlLightLight;
+            SummaNDSLabelYMG.Location = new Point(3, 0);
+            SummaNDSLabelYMG.Name = "SummaNDSLabelYMG";
+            SummaNDSLabelYMG.Size = new Size(294, 128);
+            SummaNDSLabelYMG.TabIndex = 0;
+            SummaNDSLabelYMG.Text = "Сумма продукта без НДС";
+            SummaNDSLabelYMG.TextAlign = ContentAlignment.TopRight;
             // 
             // SecondFormulaFirstTextBox
             // 
             SecondFormulaFirstTextBox.Dock = DockStyle.Fill;
+            SecondFormulaFirstTextBox.Font = new Font("Segoe UI", 15.75F);
             SecondFormulaFirstTextBox.Location = new Point(303, 3);
             SecondFormulaFirstTextBox.Name = "SecondFormulaFirstTextBox";
-            SecondFormulaFirstTextBox.Size = new Size(295, 23);
+            SecondFormulaFirstTextBox.Size = new Size(295, 35);
             SecondFormulaFirstTextBox.TabIndex = 1;
             // 
-            // SecondFormulaButton
+            // SecondFormulaButtonYMG
             // 
-            SecondFormulaButton.Dock = DockStyle.Fill;
-            SecondFormulaButton.Location = new Point(3, 271);
-            SecondFormulaButton.Name = "SecondFormulaButton";
-            SecondFormulaButton.Size = new Size(601, 128);
-            SecondFormulaButton.TabIndex = 0;
-            SecondFormulaButton.Text = "Рассчитать второй вариант\r\n";
-            SecondFormulaButton.UseVisualStyleBackColor = true;
-            SecondFormulaButton.Click += SecondFormulaButton_Click;
+            SecondFormulaButtonYMG.Dock = DockStyle.Fill;
+            SecondFormulaButtonYMG.Font = new Font("Segoe UI", 15.75F);
+            SecondFormulaButtonYMG.Location = new Point(3, 271);
+            SecondFormulaButtonYMG.Name = "SecondFormulaButtonYMG";
+            SecondFormulaButtonYMG.Size = new Size(601, 128);
+            SecondFormulaButtonYMG.TabIndex = 0;
+            SecondFormulaButtonYMG.Text = "Рассчитать второй вариант\r\n";
+            SecondFormulaButtonYMG.UseVisualStyleBackColor = true;
+            SecondFormulaButtonYMG.Click += SecondFormulaButton_Click;
             // 
             // ResultSummaNDSLabel
             // 
@@ -213,7 +218,7 @@
             FirstFormulaPanel.ColumnCount = 1;
             FirstFormulaPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             FirstFormulaPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
-            FirstFormulaPanel.Controls.Add(FirstFormulaButton, 0, 2);
+            FirstFormulaPanel.Controls.Add(FirstFormulaButtonYMG, 0, 2);
             FirstFormulaPanel.Controls.Add(FirstFormulaFirstPanel, 0, 0);
             FirstFormulaPanel.Controls.Add(FirstFormulaSecondPanel, 0, 1);
             FirstFormulaPanel.Controls.Add(ResultNDSLabel, 0, 3);
@@ -230,24 +235,25 @@
             FirstFormulaPanel.Size = new Size(607, 674);
             FirstFormulaPanel.TabIndex = 0;
             // 
-            // FirstFormulaButton
+            // FirstFormulaButtonYMG
             // 
-            FirstFormulaButton.Dock = DockStyle.Fill;
-            FirstFormulaButton.Location = new Point(3, 271);
-            FirstFormulaButton.Name = "FirstFormulaButton";
-            FirstFormulaButton.Size = new Size(601, 128);
-            FirstFormulaButton.TabIndex = 0;
-            FirstFormulaButton.Text = "Рассчитать первый вариант";
-            FirstFormulaButton.UseVisualStyleBackColor = true;
-            FirstFormulaButton.Click += FirstFormulaButton_Click;
+            FirstFormulaButtonYMG.Dock = DockStyle.Fill;
+            FirstFormulaButtonYMG.Font = new Font("Segoe UI", 15.75F);
+            FirstFormulaButtonYMG.Location = new Point(3, 271);
+            FirstFormulaButtonYMG.Name = "FirstFormulaButtonYMG";
+            FirstFormulaButtonYMG.Size = new Size(601, 128);
+            FirstFormulaButtonYMG.TabIndex = 0;
+            FirstFormulaButtonYMG.Text = "Рассчитать первый вариант";
+            FirstFormulaButtonYMG.UseVisualStyleBackColor = true;
+            FirstFormulaButtonYMG.Click += FirstFormulaButton_Click;
             // 
             // FirstFormulaFirstPanel
             // 
             FirstFormulaFirstPanel.ColumnCount = 2;
             FirstFormulaFirstPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             FirstFormulaFirstPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            FirstFormulaFirstPanel.Controls.Add(SummaLabel, 0, 0);
-            FirstFormulaFirstPanel.Controls.Add(FirstFormulaFirstTextBox, 1, 0);
+            FirstFormulaFirstPanel.Controls.Add(SummaLabelYMG, 0, 0);
+            FirstFormulaFirstPanel.Controls.Add(FirstFormulaFirstTextBoxYMG, 1, 0);
             FirstFormulaFirstPanel.Dock = DockStyle.Fill;
             FirstFormulaFirstPanel.Location = new Point(3, 3);
             FirstFormulaFirstPanel.Name = "FirstFormulaFirstPanel";
@@ -256,33 +262,35 @@
             FirstFormulaFirstPanel.Size = new Size(601, 128);
             FirstFormulaFirstPanel.TabIndex = 1;
             // 
-            // SummaLabel
+            // SummaLabelYMG
             // 
-            SummaLabel.AutoSize = true;
-            SummaLabel.Dock = DockStyle.Fill;
-            SummaLabel.ForeColor = SystemColors.ControlLightLight;
-            SummaLabel.Location = new Point(3, 0);
-            SummaLabel.Name = "SummaLabel";
-            SummaLabel.Size = new Size(294, 128);
-            SummaLabel.TabIndex = 0;
-            SummaLabel.Text = "Сумма с НДС";
-            SummaLabel.TextAlign = ContentAlignment.TopRight;
+            SummaLabelYMG.AutoSize = true;
+            SummaLabelYMG.Dock = DockStyle.Fill;
+            SummaLabelYMG.Font = new Font("Segoe UI", 15.75F);
+            SummaLabelYMG.ForeColor = SystemColors.ControlLightLight;
+            SummaLabelYMG.Location = new Point(3, 0);
+            SummaLabelYMG.Name = "SummaLabelYMG";
+            SummaLabelYMG.Size = new Size(294, 128);
+            SummaLabelYMG.TabIndex = 0;
+            SummaLabelYMG.Text = "Сумма с НДС";
+            SummaLabelYMG.TextAlign = ContentAlignment.TopRight;
             // 
-            // FirstFormulaFirstTextBox
+            // FirstFormulaFirstTextBoxYMG
             // 
-            FirstFormulaFirstTextBox.Dock = DockStyle.Fill;
-            FirstFormulaFirstTextBox.Location = new Point(303, 3);
-            FirstFormulaFirstTextBox.Name = "FirstFormulaFirstTextBox";
-            FirstFormulaFirstTextBox.Size = new Size(295, 23);
-            FirstFormulaFirstTextBox.TabIndex = 1;
+            FirstFormulaFirstTextBoxYMG.Dock = DockStyle.Fill;
+            FirstFormulaFirstTextBoxYMG.Font = new Font("Segoe UI", 15.75F);
+            FirstFormulaFirstTextBoxYMG.Location = new Point(303, 3);
+            FirstFormulaFirstTextBoxYMG.Name = "FirstFormulaFirstTextBoxYMG";
+            FirstFormulaFirstTextBoxYMG.Size = new Size(295, 35);
+            FirstFormulaFirstTextBoxYMG.TabIndex = 1;
             // 
             // FirstFormulaSecondPanel
             // 
             FirstFormulaSecondPanel.ColumnCount = 2;
             FirstFormulaSecondPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             FirstFormulaSecondPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            FirstFormulaSecondPanel.Controls.Add(NDSLabel, 0, 0);
-            FirstFormulaSecondPanel.Controls.Add(FirstFormulaSecondTextBox, 1, 0);
+            FirstFormulaSecondPanel.Controls.Add(NDSLabelYMG, 0, 0);
+            FirstFormulaSecondPanel.Controls.Add(FirstFormulaSecondTextBoxYMG, 1, 0);
             FirstFormulaSecondPanel.Dock = DockStyle.Fill;
             FirstFormulaSecondPanel.Location = new Point(3, 137);
             FirstFormulaSecondPanel.Name = "FirstFormulaSecondPanel";
@@ -291,25 +299,27 @@
             FirstFormulaSecondPanel.Size = new Size(601, 128);
             FirstFormulaSecondPanel.TabIndex = 2;
             // 
-            // NDSLabel
+            // NDSLabelYMG
             // 
-            NDSLabel.AutoSize = true;
-            NDSLabel.Dock = DockStyle.Fill;
-            NDSLabel.ForeColor = SystemColors.ControlLightLight;
-            NDSLabel.Location = new Point(3, 0);
-            NDSLabel.Name = "NDSLabel";
-            NDSLabel.Size = new Size(294, 128);
-            NDSLabel.TabIndex = 0;
-            NDSLabel.Text = "Процентная ставка НДС";
-            NDSLabel.TextAlign = ContentAlignment.TopRight;
+            NDSLabelYMG.AutoSize = true;
+            NDSLabelYMG.Dock = DockStyle.Fill;
+            NDSLabelYMG.Font = new Font("Segoe UI", 15.75F);
+            NDSLabelYMG.ForeColor = SystemColors.ControlLightLight;
+            NDSLabelYMG.Location = new Point(3, 0);
+            NDSLabelYMG.Name = "NDSLabelYMG";
+            NDSLabelYMG.Size = new Size(294, 128);
+            NDSLabelYMG.TabIndex = 0;
+            NDSLabelYMG.Text = "Процентная ставка НДС";
+            NDSLabelYMG.TextAlign = ContentAlignment.TopRight;
             // 
-            // FirstFormulaSecondTextBox
+            // FirstFormulaSecondTextBoxYMG
             // 
-            FirstFormulaSecondTextBox.Dock = DockStyle.Fill;
-            FirstFormulaSecondTextBox.Location = new Point(303, 3);
-            FirstFormulaSecondTextBox.Name = "FirstFormulaSecondTextBox";
-            FirstFormulaSecondTextBox.Size = new Size(295, 23);
-            FirstFormulaSecondTextBox.TabIndex = 1;
+            FirstFormulaSecondTextBoxYMG.Dock = DockStyle.Fill;
+            FirstFormulaSecondTextBoxYMG.Font = new Font("Segoe UI", 15.75F);
+            FirstFormulaSecondTextBoxYMG.Location = new Point(303, 3);
+            FirstFormulaSecondTextBoxYMG.Name = "FirstFormulaSecondTextBoxYMG";
+            FirstFormulaSecondTextBoxYMG.Size = new Size(295, 35);
+            FirstFormulaSecondTextBoxYMG.TabIndex = 1;
             // 
             // ResultNDSLabel
             // 
@@ -361,20 +371,20 @@
         private TableLayoutPanel SeporatorPanel;
         private TableLayoutPanel SecondFormulaPanel;
         private TableLayoutPanel FirstFormulaPanel;
-        private Button SecondFormulaButton;
-        private Button FirstFormulaButton;
+        private Button SecondFormulaButtonYMG;
+        private Button FirstFormulaButtonYMG;
         private TableLayoutPanel SecondFormulaSecondPanel;
-        private Label NDSLabel2;
+        private Label NDSLabel2YMG;
         private TableLayoutPanel SecondFormulaFirstPanel;
-        private Label SummaNDSLabel;
+        private Label SummaNDSLabelYMG;
         private TableLayoutPanel FirstFormulaFirstPanel;
-        private Label SummaLabel;
+        private Label SummaLabelYMG;
         private TableLayoutPanel FirstFormulaSecondPanel;
-        private Label NDSLabel;
-        private TextBox SecondFormulaSecondTextBox;
+        private Label NDSLabelYMG;
+        private TextBox SecondFormulaSecondTextBoxYMG;
         private TextBox SecondFormulaFirstTextBox;
-        private TextBox FirstFormulaFirstTextBox;
-        private TextBox FirstFormulaSecondTextBox;
+        private TextBox FirstFormulaFirstTextBoxYMG;
+        private TextBox FirstFormulaSecondTextBoxYMG;
         private Label ResultSummaNDSLabel;
         private Label SummaWithNDSLabel;
         private Label ResultNDSLabel;

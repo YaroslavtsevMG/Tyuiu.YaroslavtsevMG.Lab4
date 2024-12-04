@@ -31,30 +31,30 @@
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ButtonsPanel = new Panel();
             TableLayoutPanel = new TableLayoutPanel();
-            button0 = new Button();
-            button2 = new Button();
-            button8 = new Button();
-            button9 = new Button();
-            button6 = new Button();
-            button3 = new Button();
-            button7 = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            button1 = new Button();
-            InversButton = new Button();
-            CommaButton = new Button();
-            EqualButton = new Button();
-            DelButton = new Button();
-            QuotientButton = new Button();
-            MinusButton = new Button();
-            PlusButton = new Button();
-            MultiplicationButton = new Button();
-            PowerButton = new Button();
-            RootButton = new Button();
+            button0YMG = new Button();
+            button2YMG = new Button();
+            button8YMG = new Button();
+            button9YMG = new Button();
+            button6YMG = new Button();
+            button3YMG = new Button();
+            button7YMG = new Button();
+            button4YMG = new Button();
+            button5YMG = new Button();
+            button1YMG = new Button();
+            InversButtonYMG = new Button();
+            CommaButtonYMG = new Button();
+            EqualButtonYMG = new Button();
+            DelButtonYMG = new Button();
+            QuotientButtonYMG = new Button();
+            MinusButtonYMG = new Button();
+            PlusButtonYMG = new Button();
+            MultiplicationButtonYMG = new Button();
+            PowerButtonYMG = new Button();
+            RootButtonYMG = new Button();
             ScreenPanel = new Panel();
             ScreenTableLayout = new TableLayoutPanel();
-            FirstPartLabel = new Label();
-            SecondPartLabel = new Label();
+            FirstPartLabelYMG = new Label();
+            SecondPartLabelYMG = new Label();
             ButtonsPanel.SuspendLayout();
             TableLayoutPanel.SuspendLayout();
             ScreenPanel.SuspendLayout();
@@ -79,26 +79,26 @@
             TableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 19.9991989F));
             TableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 19.9992027F));
             TableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20.0031986F));
-            TableLayoutPanel.Controls.Add(button0, 1, 3);
-            TableLayoutPanel.Controls.Add(button2, 1, 2);
-            TableLayoutPanel.Controls.Add(button8, 1, 0);
-            TableLayoutPanel.Controls.Add(button9, 2, 0);
-            TableLayoutPanel.Controls.Add(button6, 2, 1);
-            TableLayoutPanel.Controls.Add(button3, 2, 2);
-            TableLayoutPanel.Controls.Add(button7, 0, 0);
-            TableLayoutPanel.Controls.Add(button4, 0, 1);
-            TableLayoutPanel.Controls.Add(button5, 1, 1);
-            TableLayoutPanel.Controls.Add(button1, 0, 2);
-            TableLayoutPanel.Controls.Add(InversButton, 0, 3);
-            TableLayoutPanel.Controls.Add(CommaButton, 2, 3);
-            TableLayoutPanel.Controls.Add(EqualButton, 4, 3);
-            TableLayoutPanel.Controls.Add(DelButton, 4, 2);
-            TableLayoutPanel.Controls.Add(QuotientButton, 4, 1);
-            TableLayoutPanel.Controls.Add(MinusButton, 4, 0);
-            TableLayoutPanel.Controls.Add(PlusButton, 3, 0);
-            TableLayoutPanel.Controls.Add(MultiplicationButton, 3, 1);
-            TableLayoutPanel.Controls.Add(PowerButton, 3, 2);
-            TableLayoutPanel.Controls.Add(RootButton, 3, 3);
+            TableLayoutPanel.Controls.Add(button0YMG, 1, 3);
+            TableLayoutPanel.Controls.Add(button2YMG, 1, 2);
+            TableLayoutPanel.Controls.Add(button8YMG, 1, 0);
+            TableLayoutPanel.Controls.Add(button9YMG, 2, 0);
+            TableLayoutPanel.Controls.Add(button6YMG, 2, 1);
+            TableLayoutPanel.Controls.Add(button3YMG, 2, 2);
+            TableLayoutPanel.Controls.Add(button7YMG, 0, 0);
+            TableLayoutPanel.Controls.Add(button4YMG, 0, 1);
+            TableLayoutPanel.Controls.Add(button5YMG, 1, 1);
+            TableLayoutPanel.Controls.Add(button1YMG, 0, 2);
+            TableLayoutPanel.Controls.Add(InversButtonYMG, 0, 3);
+            TableLayoutPanel.Controls.Add(CommaButtonYMG, 2, 3);
+            TableLayoutPanel.Controls.Add(EqualButtonYMG, 4, 3);
+            TableLayoutPanel.Controls.Add(DelButtonYMG, 4, 2);
+            TableLayoutPanel.Controls.Add(QuotientButtonYMG, 4, 1);
+            TableLayoutPanel.Controls.Add(MinusButtonYMG, 4, 0);
+            TableLayoutPanel.Controls.Add(PlusButtonYMG, 3, 0);
+            TableLayoutPanel.Controls.Add(MultiplicationButtonYMG, 3, 1);
+            TableLayoutPanel.Controls.Add(PowerButtonYMG, 3, 2);
+            TableLayoutPanel.Controls.Add(RootButtonYMG, 3, 3);
             TableLayoutPanel.Dock = DockStyle.Fill;
             TableLayoutPanel.Location = new Point(0, 0);
             TableLayoutPanel.Name = "TableLayoutPanel";
@@ -110,225 +110,245 @@
             TableLayoutPanel.Size = new Size(1169, 507);
             TableLayoutPanel.TabIndex = 0;
             // 
-            // button0
+            // button0YMG
             // 
-            button0.Dock = DockStyle.Fill;
-            button0.Location = new Point(236, 381);
-            button0.Name = "button0";
-            button0.Size = new Size(227, 123);
-            button0.TabIndex = 0;
-            button0.Text = "0";
-            button0.UseVisualStyleBackColor = true;
-            button0.Click += button0_Click;
+            button0YMG.Dock = DockStyle.Fill;
+            button0YMG.Font = new Font("Segoe UI", 26.25F);
+            button0YMG.Location = new Point(236, 381);
+            button0YMG.Name = "button0YMG";
+            button0YMG.Size = new Size(227, 123);
+            button0YMG.TabIndex = 0;
+            button0YMG.Text = "0";
+            button0YMG.UseVisualStyleBackColor = true;
+            button0YMG.Click += button0_Click;
             // 
-            // button2
+            // button2YMG
             // 
-            button2.Dock = DockStyle.Fill;
-            button2.Location = new Point(236, 255);
-            button2.Name = "button2";
-            button2.Size = new Size(227, 120);
-            button2.TabIndex = 1;
-            button2.Text = "2";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            button2YMG.Dock = DockStyle.Fill;
+            button2YMG.Font = new Font("Segoe UI", 26.25F);
+            button2YMG.Location = new Point(236, 255);
+            button2YMG.Name = "button2YMG";
+            button2YMG.Size = new Size(227, 120);
+            button2YMG.TabIndex = 1;
+            button2YMG.Text = "2";
+            button2YMG.UseVisualStyleBackColor = true;
+            button2YMG.Click += button2_Click;
             // 
-            // button8
+            // button8YMG
             // 
-            button8.Dock = DockStyle.Fill;
-            button8.Location = new Point(236, 3);
-            button8.Name = "button8";
-            button8.Size = new Size(227, 120);
-            button8.TabIndex = 2;
-            button8.Text = "8";
-            button8.UseVisualStyleBackColor = true;
-            button8.Click += button8_Click;
+            button8YMG.Dock = DockStyle.Fill;
+            button8YMG.Font = new Font("Segoe UI", 26.25F);
+            button8YMG.Location = new Point(236, 3);
+            button8YMG.Name = "button8YMG";
+            button8YMG.Size = new Size(227, 120);
+            button8YMG.TabIndex = 2;
+            button8YMG.Text = "8";
+            button8YMG.UseVisualStyleBackColor = true;
+            button8YMG.Click += button8_Click;
             // 
-            // button9
+            // button9YMG
             // 
-            button9.Dock = DockStyle.Fill;
-            button9.Location = new Point(469, 3);
-            button9.Name = "button9";
-            button9.Size = new Size(227, 120);
-            button9.TabIndex = 3;
-            button9.Text = "9";
-            button9.UseVisualStyleBackColor = true;
-            button9.Click += button9_Click;
+            button9YMG.Dock = DockStyle.Fill;
+            button9YMG.Font = new Font("Segoe UI", 26.25F);
+            button9YMG.Location = new Point(469, 3);
+            button9YMG.Name = "button9YMG";
+            button9YMG.Size = new Size(227, 120);
+            button9YMG.TabIndex = 3;
+            button9YMG.Text = "9";
+            button9YMG.UseVisualStyleBackColor = true;
+            button9YMG.Click += button9_Click;
             // 
-            // button6
+            // button6YMG
             // 
-            button6.Dock = DockStyle.Fill;
-            button6.Location = new Point(469, 129);
-            button6.Name = "button6";
-            button6.Size = new Size(227, 120);
-            button6.TabIndex = 4;
-            button6.Text = "6";
-            button6.UseVisualStyleBackColor = true;
-            button6.Click += button6_Click;
+            button6YMG.Dock = DockStyle.Fill;
+            button6YMG.Font = new Font("Segoe UI", 26.25F);
+            button6YMG.Location = new Point(469, 129);
+            button6YMG.Name = "button6YMG";
+            button6YMG.Size = new Size(227, 120);
+            button6YMG.TabIndex = 4;
+            button6YMG.Text = "6";
+            button6YMG.UseVisualStyleBackColor = true;
+            button6YMG.Click += button6_Click;
             // 
-            // button3
+            // button3YMG
             // 
-            button3.Dock = DockStyle.Fill;
-            button3.Location = new Point(469, 255);
-            button3.Name = "button3";
-            button3.Size = new Size(227, 120);
-            button3.TabIndex = 5;
-            button3.Text = "3";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            button3YMG.Dock = DockStyle.Fill;
+            button3YMG.Font = new Font("Segoe UI", 26.25F);
+            button3YMG.Location = new Point(469, 255);
+            button3YMG.Name = "button3YMG";
+            button3YMG.Size = new Size(227, 120);
+            button3YMG.TabIndex = 5;
+            button3YMG.Text = "3";
+            button3YMG.UseVisualStyleBackColor = true;
+            button3YMG.Click += button3_Click;
             // 
-            // button7
+            // button7YMG
             // 
-            button7.Dock = DockStyle.Fill;
-            button7.Location = new Point(3, 3);
-            button7.Name = "button7";
-            button7.Size = new Size(227, 120);
-            button7.TabIndex = 6;
-            button7.Text = "7";
-            button7.UseVisualStyleBackColor = true;
-            button7.Click += button7_Click;
+            button7YMG.Dock = DockStyle.Fill;
+            button7YMG.Font = new Font("Segoe UI", 26.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button7YMG.Location = new Point(3, 3);
+            button7YMG.Name = "button7YMG";
+            button7YMG.Size = new Size(227, 120);
+            button7YMG.TabIndex = 6;
+            button7YMG.Text = "7";
+            button7YMG.UseVisualStyleBackColor = true;
+            button7YMG.Click += button7_Click;
             // 
-            // button4
+            // button4YMG
             // 
-            button4.Dock = DockStyle.Fill;
-            button4.Location = new Point(3, 129);
-            button4.Name = "button4";
-            button4.Size = new Size(227, 120);
-            button4.TabIndex = 7;
-            button4.Text = "4";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
+            button4YMG.Dock = DockStyle.Fill;
+            button4YMG.Font = new Font("Segoe UI", 26.25F);
+            button4YMG.Location = new Point(3, 129);
+            button4YMG.Name = "button4YMG";
+            button4YMG.Size = new Size(227, 120);
+            button4YMG.TabIndex = 7;
+            button4YMG.Text = "4";
+            button4YMG.UseVisualStyleBackColor = true;
+            button4YMG.Click += button4_Click;
             // 
-            // button5
+            // button5YMG
             // 
-            button5.Dock = DockStyle.Fill;
-            button5.Location = new Point(236, 129);
-            button5.Name = "button5";
-            button5.Size = new Size(227, 120);
-            button5.TabIndex = 8;
-            button5.Text = "5";
-            button5.UseVisualStyleBackColor = true;
-            button5.Click += button5_Click;
+            button5YMG.Dock = DockStyle.Fill;
+            button5YMG.Font = new Font("Segoe UI", 26.25F);
+            button5YMG.Location = new Point(236, 129);
+            button5YMG.Name = "button5YMG";
+            button5YMG.Size = new Size(227, 120);
+            button5YMG.TabIndex = 8;
+            button5YMG.Text = "5";
+            button5YMG.UseVisualStyleBackColor = true;
+            button5YMG.Click += button5_Click;
             // 
-            // button1
+            // button1YMG
             // 
-            button1.Dock = DockStyle.Fill;
-            button1.Location = new Point(3, 255);
-            button1.Name = "button1";
-            button1.Size = new Size(227, 120);
-            button1.TabIndex = 9;
-            button1.Text = "1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            button1YMG.Dock = DockStyle.Fill;
+            button1YMG.Font = new Font("Segoe UI", 26.25F);
+            button1YMG.Location = new Point(3, 255);
+            button1YMG.Name = "button1YMG";
+            button1YMG.Size = new Size(227, 120);
+            button1YMG.TabIndex = 9;
+            button1YMG.Text = "1";
+            button1YMG.UseVisualStyleBackColor = true;
+            button1YMG.Click += button1_Click;
             // 
-            // InversButton
+            // InversButtonYMG
             // 
-            InversButton.Dock = DockStyle.Fill;
-            InversButton.Location = new Point(3, 381);
-            InversButton.Name = "InversButton";
-            InversButton.Size = new Size(227, 123);
-            InversButton.TabIndex = 10;
-            InversButton.Text = "+/-";
-            InversButton.UseVisualStyleBackColor = true;
-            InversButton.Click += InversButton_Click;
+            InversButtonYMG.Dock = DockStyle.Fill;
+            InversButtonYMG.Font = new Font("Segoe UI", 26.25F);
+            InversButtonYMG.Location = new Point(3, 381);
+            InversButtonYMG.Name = "InversButtonYMG";
+            InversButtonYMG.Size = new Size(227, 123);
+            InversButtonYMG.TabIndex = 10;
+            InversButtonYMG.Text = "+/-";
+            InversButtonYMG.UseVisualStyleBackColor = true;
+            InversButtonYMG.Click += InversButton_Click;
             // 
-            // CommaButton
+            // CommaButtonYMG
             // 
-            CommaButton.Dock = DockStyle.Fill;
-            CommaButton.Location = new Point(469, 381);
-            CommaButton.Name = "CommaButton";
-            CommaButton.Size = new Size(227, 123);
-            CommaButton.TabIndex = 11;
-            CommaButton.Text = ",";
-            CommaButton.UseVisualStyleBackColor = true;
-            CommaButton.Click += CommaButton_Click;
+            CommaButtonYMG.Dock = DockStyle.Fill;
+            CommaButtonYMG.Font = new Font("Segoe UI", 26.25F);
+            CommaButtonYMG.Location = new Point(469, 381);
+            CommaButtonYMG.Name = "CommaButtonYMG";
+            CommaButtonYMG.Size = new Size(227, 123);
+            CommaButtonYMG.TabIndex = 11;
+            CommaButtonYMG.Text = ",";
+            CommaButtonYMG.UseVisualStyleBackColor = true;
+            CommaButtonYMG.Click += CommaButton_Click;
             // 
-            // EqualButton
+            // EqualButtonYMG
             // 
-            EqualButton.Dock = DockStyle.Fill;
-            EqualButton.Location = new Point(935, 381);
-            EqualButton.Name = "EqualButton";
-            EqualButton.Size = new Size(231, 123);
-            EqualButton.TabIndex = 15;
-            EqualButton.Text = "=";
-            EqualButton.UseVisualStyleBackColor = true;
-            EqualButton.Click += EqualButton_Click;
+            EqualButtonYMG.Dock = DockStyle.Fill;
+            EqualButtonYMG.Font = new Font("Segoe UI", 26.25F);
+            EqualButtonYMG.Location = new Point(935, 381);
+            EqualButtonYMG.Name = "EqualButtonYMG";
+            EqualButtonYMG.Size = new Size(231, 123);
+            EqualButtonYMG.TabIndex = 15;
+            EqualButtonYMG.Text = "=";
+            EqualButtonYMG.UseVisualStyleBackColor = true;
+            EqualButtonYMG.Click += EqualButton_Click;
             // 
-            // DelButton
+            // DelButtonYMG
             // 
-            DelButton.Dock = DockStyle.Fill;
-            DelButton.Location = new Point(935, 255);
-            DelButton.Name = "DelButton";
-            DelButton.Size = new Size(231, 120);
-            DelButton.TabIndex = 14;
-            DelButton.Text = " ⌦";
-            DelButton.UseVisualStyleBackColor = true;
-            DelButton.Click += DelButton_Click;
+            DelButtonYMG.Dock = DockStyle.Fill;
+            DelButtonYMG.Font = new Font("Segoe UI", 26.25F);
+            DelButtonYMG.Location = new Point(935, 255);
+            DelButtonYMG.Name = "DelButtonYMG";
+            DelButtonYMG.Size = new Size(231, 120);
+            DelButtonYMG.TabIndex = 14;
+            DelButtonYMG.Text = " ⌦";
+            DelButtonYMG.UseVisualStyleBackColor = true;
+            DelButtonYMG.Click += DelButton_Click;
             // 
-            // QuotientButton
+            // QuotientButtonYMG
             // 
-            QuotientButton.Dock = DockStyle.Fill;
-            QuotientButton.Location = new Point(935, 129);
-            QuotientButton.Name = "QuotientButton";
-            QuotientButton.Size = new Size(231, 120);
-            QuotientButton.TabIndex = 13;
-            QuotientButton.Text = "/";
-            QuotientButton.UseVisualStyleBackColor = true;
-            QuotientButton.Click += QuotientButton_Click;
+            QuotientButtonYMG.Dock = DockStyle.Fill;
+            QuotientButtonYMG.Font = new Font("Segoe UI", 26.25F);
+            QuotientButtonYMG.Location = new Point(935, 129);
+            QuotientButtonYMG.Name = "QuotientButtonYMG";
+            QuotientButtonYMG.Size = new Size(231, 120);
+            QuotientButtonYMG.TabIndex = 13;
+            QuotientButtonYMG.Text = "/";
+            QuotientButtonYMG.UseVisualStyleBackColor = true;
+            QuotientButtonYMG.Click += QuotientButton_Click;
             // 
-            // MinusButton
+            // MinusButtonYMG
             // 
-            MinusButton.Dock = DockStyle.Fill;
-            MinusButton.Location = new Point(935, 3);
-            MinusButton.Name = "MinusButton";
-            MinusButton.Size = new Size(231, 120);
-            MinusButton.TabIndex = 12;
-            MinusButton.Text = "-";
-            MinusButton.UseVisualStyleBackColor = true;
-            MinusButton.Click += MinusButton_Click;
+            MinusButtonYMG.Dock = DockStyle.Fill;
+            MinusButtonYMG.Font = new Font("Segoe UI", 26.25F);
+            MinusButtonYMG.Location = new Point(935, 3);
+            MinusButtonYMG.Name = "MinusButtonYMG";
+            MinusButtonYMG.Size = new Size(231, 120);
+            MinusButtonYMG.TabIndex = 12;
+            MinusButtonYMG.Text = "-";
+            MinusButtonYMG.UseVisualStyleBackColor = true;
+            MinusButtonYMG.Click += MinusButton_Click;
             // 
-            // PlusButton
+            // PlusButtonYMG
             // 
-            PlusButton.Dock = DockStyle.Fill;
-            PlusButton.Location = new Point(702, 3);
-            PlusButton.Name = "PlusButton";
-            PlusButton.Size = new Size(227, 120);
-            PlusButton.TabIndex = 16;
-            PlusButton.Text = "+";
-            PlusButton.UseVisualStyleBackColor = true;
-            PlusButton.Click += PlusButton_Click;
+            PlusButtonYMG.Dock = DockStyle.Fill;
+            PlusButtonYMG.Font = new Font("Segoe UI", 26.25F);
+            PlusButtonYMG.Location = new Point(702, 3);
+            PlusButtonYMG.Name = "PlusButtonYMG";
+            PlusButtonYMG.Size = new Size(227, 120);
+            PlusButtonYMG.TabIndex = 16;
+            PlusButtonYMG.Text = "+";
+            PlusButtonYMG.UseVisualStyleBackColor = true;
+            PlusButtonYMG.Click += PlusButton_Click;
             // 
-            // MultiplicationButton
+            // MultiplicationButtonYMG
             // 
-            MultiplicationButton.Dock = DockStyle.Fill;
-            MultiplicationButton.Location = new Point(702, 129);
-            MultiplicationButton.Name = "MultiplicationButton";
-            MultiplicationButton.Size = new Size(227, 120);
-            MultiplicationButton.TabIndex = 17;
-            MultiplicationButton.Text = "X";
-            MultiplicationButton.UseVisualStyleBackColor = true;
-            MultiplicationButton.Click += MultiplicationButton_Click;
+            MultiplicationButtonYMG.Dock = DockStyle.Fill;
+            MultiplicationButtonYMG.Font = new Font("Segoe UI", 26.25F);
+            MultiplicationButtonYMG.Location = new Point(702, 129);
+            MultiplicationButtonYMG.Name = "MultiplicationButtonYMG";
+            MultiplicationButtonYMG.Size = new Size(227, 120);
+            MultiplicationButtonYMG.TabIndex = 17;
+            MultiplicationButtonYMG.Text = "X";
+            MultiplicationButtonYMG.UseVisualStyleBackColor = true;
+            MultiplicationButtonYMG.Click += MultiplicationButton_Click;
             // 
-            // PowerButton
+            // PowerButtonYMG
             // 
-            PowerButton.Dock = DockStyle.Fill;
-            PowerButton.Location = new Point(702, 255);
-            PowerButton.Name = "PowerButton";
-            PowerButton.Size = new Size(227, 120);
-            PowerButton.TabIndex = 18;
-            PowerButton.Text = "^";
-            PowerButton.UseVisualStyleBackColor = true;
-            PowerButton.Click += PowerButton_Click;
+            PowerButtonYMG.Dock = DockStyle.Fill;
+            PowerButtonYMG.Font = new Font("Segoe UI", 26.25F);
+            PowerButtonYMG.Location = new Point(702, 255);
+            PowerButtonYMG.Name = "PowerButtonYMG";
+            PowerButtonYMG.Size = new Size(227, 120);
+            PowerButtonYMG.TabIndex = 18;
+            PowerButtonYMG.Text = "^";
+            PowerButtonYMG.UseVisualStyleBackColor = true;
+            PowerButtonYMG.Click += PowerButton_Click;
             // 
-            // RootButton
+            // RootButtonYMG
             // 
-            RootButton.Dock = DockStyle.Fill;
-            RootButton.Location = new Point(702, 381);
-            RootButton.Name = "RootButton";
-            RootButton.Size = new Size(227, 123);
-            RootButton.TabIndex = 19;
-            RootButton.Text = "√";
-            RootButton.UseVisualStyleBackColor = true;
-            RootButton.Click += RootButton_Click;
+            RootButtonYMG.Dock = DockStyle.Fill;
+            RootButtonYMG.Font = new Font("Segoe UI", 26.25F);
+            RootButtonYMG.Location = new Point(702, 381);
+            RootButtonYMG.Name = "RootButtonYMG";
+            RootButtonYMG.Size = new Size(227, 123);
+            RootButtonYMG.TabIndex = 19;
+            RootButtonYMG.Text = "√";
+            RootButtonYMG.UseVisualStyleBackColor = true;
+            RootButtonYMG.Click += RootButton_Click;
             // 
             // ScreenPanel
             // 
@@ -343,8 +363,8 @@
             // 
             ScreenTableLayout.ColumnCount = 1;
             ScreenTableLayout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            ScreenTableLayout.Controls.Add(FirstPartLabel, 0, 0);
-            ScreenTableLayout.Controls.Add(SecondPartLabel, 0, 1);
+            ScreenTableLayout.Controls.Add(FirstPartLabelYMG, 0, 0);
+            ScreenTableLayout.Controls.Add(SecondPartLabelYMG, 0, 1);
             ScreenTableLayout.Dock = DockStyle.Fill;
             ScreenTableLayout.Location = new Point(0, 0);
             ScreenTableLayout.Name = "ScreenTableLayout";
@@ -354,31 +374,33 @@
             ScreenTableLayout.Size = new Size(1169, 100);
             ScreenTableLayout.TabIndex = 0;
             // 
-            // FirstPartLabel
+            // FirstPartLabelYMG
             // 
-            FirstPartLabel.AutoSize = true;
-            FirstPartLabel.BackColor = SystemColors.ControlDarkDark;
-            FirstPartLabel.Dock = DockStyle.Fill;
-            FirstPartLabel.ForeColor = SystemColors.ControlLightLight;
-            FirstPartLabel.Location = new Point(3, 0);
-            FirstPartLabel.Name = "FirstPartLabel";
-            FirstPartLabel.Size = new Size(1163, 50);
-            FirstPartLabel.TabIndex = 0;
-            FirstPartLabel.Text = "первая половина";
-            FirstPartLabel.TextAlign = ContentAlignment.MiddleRight;
+            FirstPartLabelYMG.AutoSize = true;
+            FirstPartLabelYMG.BackColor = SystemColors.ControlDarkDark;
+            FirstPartLabelYMG.Dock = DockStyle.Fill;
+            FirstPartLabelYMG.Font = new Font("Segoe UI", 26.25F);
+            FirstPartLabelYMG.ForeColor = SystemColors.ControlLightLight;
+            FirstPartLabelYMG.Location = new Point(3, 0);
+            FirstPartLabelYMG.Name = "FirstPartLabelYMG";
+            FirstPartLabelYMG.Size = new Size(1163, 50);
+            FirstPartLabelYMG.TabIndex = 0;
+            FirstPartLabelYMG.Text = "первая половина";
+            FirstPartLabelYMG.TextAlign = ContentAlignment.MiddleRight;
             // 
-            // SecondPartLabel
+            // SecondPartLabelYMG
             // 
-            SecondPartLabel.AutoSize = true;
-            SecondPartLabel.BackColor = SystemColors.ControlDarkDark;
-            SecondPartLabel.Dock = DockStyle.Fill;
-            SecondPartLabel.ForeColor = SystemColors.ControlLightLight;
-            SecondPartLabel.Location = new Point(3, 50);
-            SecondPartLabel.Name = "SecondPartLabel";
-            SecondPartLabel.Size = new Size(1163, 50);
-            SecondPartLabel.TabIndex = 1;
-            SecondPartLabel.Text = "вторая половина";
-            SecondPartLabel.TextAlign = ContentAlignment.MiddleRight;
+            SecondPartLabelYMG.AutoSize = true;
+            SecondPartLabelYMG.BackColor = SystemColors.ControlDarkDark;
+            SecondPartLabelYMG.Dock = DockStyle.Fill;
+            SecondPartLabelYMG.Font = new Font("Segoe UI", 26.25F);
+            SecondPartLabelYMG.ForeColor = SystemColors.ControlLightLight;
+            SecondPartLabelYMG.Location = new Point(3, 50);
+            SecondPartLabelYMG.Name = "SecondPartLabelYMG";
+            SecondPartLabelYMG.Size = new Size(1163, 50);
+            SecondPartLabelYMG.TabIndex = 1;
+            SecondPartLabelYMG.Text = "вторая половина";
+            SecondPartLabelYMG.TextAlign = ContentAlignment.MiddleRight;
             // 
             // OrdinaryCalcControl
             // 
@@ -401,29 +423,29 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Panel ButtonsPanel;
         private TableLayoutPanel TableLayoutPanel;
-        private Button button0;
-        private Button button2;
-        private Button button8;
-        private Button button9;
-        private Button button6;
-        private Button button3;
-        private Button button7;
-        private Button button4;
-        private Button button5;
-        private Button button1;
-        private Button InversButton;
-        private Button CommaButton;
-        private Button EqualButton;
-        private Button DelButton;
-        private Button QuotientButton;
-        private Button MinusButton;
-        private Button PlusButton;
-        private Button MultiplicationButton;
-        private Button PowerButton;
-        private Button RootButton;
+        private Button button0YMG;
+        private Button button2YMG;
+        private Button button8YMG;
+        private Button button9YMG;
+        private Button button6YMG;
+        private Button button3YMG;
+        private Button button7YMG;
+        private Button button4YMG;
+        private Button button5YMG;
+        private Button button1YMG;
+        private Button InversButtonYMG;
+        private Button CommaButtonYMG;
+        private Button EqualButtonYMG;
+        private Button DelButtonYMG;
+        private Button QuotientButtonYMG;
+        private Button MinusButtonYMG;
+        private Button PlusButtonYMG;
+        private Button MultiplicationButtonYMG;
+        private Button PowerButtonYMG;
+        private Button RootButtonYMG;
         private Panel ScreenPanel;
         private TableLayoutPanel ScreenTableLayout;
-        private Label FirstPartLabel;
-        private Label SecondPartLabel;
+        private Label FirstPartLabelYMG;
+        private Label SecondPartLabelYMG;
     }
 }

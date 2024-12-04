@@ -115,16 +115,18 @@
             // FromComboBox
             // 
             FromComboBox.Dock = DockStyle.Left;
+            FromComboBox.Font = new Font("Segoe UI", 26.25F);
             FromComboBox.FormattingEnabled = true;
             FromComboBox.Location = new Point(3, 110);
             FromComboBox.Name = "FromComboBox";
-            FromComboBox.Size = new Size(121, 23);
+            FromComboBox.Size = new Size(121, 55);
             FromComboBox.TabIndex = 0;
             // 
             // FromLabel
             // 
             FromLabel.AutoSize = true;
             FromLabel.Dock = DockStyle.Fill;
+            FromLabel.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             FromLabel.ForeColor = SystemColors.ControlLightLight;
             FromLabel.Location = new Point(3, 0);
             FromLabel.Name = "FromLabel";
@@ -150,15 +152,17 @@
             // FromTextBox
             // 
             FromTextBox.Dock = DockStyle.Fill;
+            FromTextBox.Font = new Font("Segoe UI", 26.25F);
             FromTextBox.Location = new Point(3, 110);
             FromTextBox.Name = "FromTextBox";
-            FromTextBox.Size = new Size(614, 23);
+            FromTextBox.Size = new Size(614, 54);
             FromTextBox.TabIndex = 2;
             // 
             // nameLabel
             // 
             nameLabel.AutoSize = true;
             nameLabel.Dock = DockStyle.Fill;
+            nameLabel.Font = new Font("Segoe UI", 15.75F);
             nameLabel.ForeColor = SystemColors.ControlLightLight;
             nameLabel.Location = new Point(3, 0);
             nameLabel.Name = "nameLabel";
@@ -199,16 +203,18 @@
             // ToComboBox
             // 
             ToComboBox.Dock = DockStyle.Left;
+            ToComboBox.Font = new Font("Segoe UI", 26.25F);
             ToComboBox.FormattingEnabled = true;
             ToComboBox.Location = new Point(3, 110);
             ToComboBox.Name = "ToComboBox";
-            ToComboBox.Size = new Size(121, 23);
+            ToComboBox.Size = new Size(121, 55);
             ToComboBox.TabIndex = 0;
             // 
             // ToLabel
             // 
             ToLabel.AutoSize = true;
             ToLabel.Dock = DockStyle.Fill;
+            ToLabel.Font = new Font("Segoe UI", 15.75F);
             ToLabel.ForeColor = SystemColors.ControlLightLight;
             ToLabel.Location = new Point(3, 0);
             ToLabel.Name = "ToLabel";
@@ -220,6 +226,7 @@
             // 
             ResultLabel.AutoSize = true;
             ResultLabel.Dock = DockStyle.Fill;
+            ResultLabel.Font = new Font("Segoe UI", 15.75F);
             ResultLabel.ForeColor = SystemColors.ControlLightLight;
             ResultLabel.Location = new Point(3, 0);
             ResultLabel.Name = "ResultLabel";
@@ -244,6 +251,7 @@
             // ConversionButton
             // 
             ConversionButton.Dock = DockStyle.Fill;
+            ConversionButton.Font = new Font("Segoe UI", 26.25F);
             ConversionButton.Location = new Point(629, 3);
             ConversionButton.Name = "ConversionButton";
             ConversionButton.Size = new Size(620, 217);

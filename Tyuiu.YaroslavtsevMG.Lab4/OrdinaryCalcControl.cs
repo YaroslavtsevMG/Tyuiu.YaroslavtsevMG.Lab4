@@ -30,49 +30,49 @@ namespace Tyuiu.YaroslavtsevMG.Lab4
         {
             InitializeComponent();
 
-            FirstPartLabel.Text = "";
-            SecondPartLabel.Text = "0";
+            FirstPartLabelYMG.Text = "";
+            SecondPartLabelYMG.Text = "0";
             operation = operations.power;
         }
 
         private void EqualButton_Click(object sender, EventArgs e)
         {
-            if (!resultTyped) secondOperand = Convert.ToDouble(SecondPartLabel.Text);
-            FirstPartLabel.Text = firstOperand.ToString()+(char)operation + secondOperand;
+            if (!resultTyped) secondOperand = Convert.ToDouble(SecondPartLabelYMG.Text);
+            FirstPartLabelYMG.Text = firstOperand.ToString()+(char)operation + secondOperand;
             switch (operation)
             {
                 case (operations.plus):
                     
                     firstOperand = OrdinaryCalc.Lib.OrdinaryCalc.CalcSumma(firstOperand, secondOperand);
-                    SecondPartLabel.Text = Convert.ToString(firstOperand);
+                    SecondPartLabelYMG.Text = Convert.ToString(firstOperand);
                     resultTyped = true;
                     break;
                 case (operations.minus):
                     {
                         
                         firstOperand = OrdinaryCalc.Lib.OrdinaryCalc.CalcDifference(firstOperand, secondOperand);
-                        SecondPartLabel.Text = Convert.ToString(firstOperand);
+                        SecondPartLabelYMG.Text = Convert.ToString(firstOperand);
                         resultTyped = true;
                         break;
                     }
                 case(operations.multiplication):
                     firstOperand = OrdinaryCalc.Lib.OrdinaryCalc.CalcMultiplication(firstOperand, secondOperand);
-                    SecondPartLabel.Text = Convert.ToString(firstOperand);
+                    SecondPartLabelYMG.Text = Convert.ToString(firstOperand);
                     resultTyped = true;
                     break;
                 case (operations.quotient):
                     firstOperand = OrdinaryCalc.Lib.OrdinaryCalc.CalcQuotient(firstOperand, secondOperand);
-                    SecondPartLabel.Text = Convert.ToString(firstOperand);
+                    SecondPartLabelYMG.Text = Convert.ToString(firstOperand);
                     resultTyped = true;
                     break;
                 case (operations.power):
                     firstOperand = OrdinaryCalc.Lib.OrdinaryCalc.CalcPower(firstOperand, secondOperand);
-                    SecondPartLabel.Text = Convert.ToString(firstOperand);
+                    SecondPartLabelYMG.Text = Convert.ToString(firstOperand);
                     resultTyped = true;
                     break;
                 case (operations.root):
                     firstOperand = OrdinaryCalc.Lib.OrdinaryCalc.CalcRoot(secondOperand,firstOperand);
-                    SecondPartLabel.Text = Convert.ToString(firstOperand);
+                    SecondPartLabelYMG.Text = Convert.ToString(firstOperand);
                     resultTyped = true;
                     break;
             }
@@ -82,20 +82,20 @@ namespace Tyuiu.YaroslavtsevMG.Lab4
         {
             if (resultTyped)
             {
-                SecondPartLabel.Text = Convert.ToString(number);
+                SecondPartLabelYMG.Text = Convert.ToString(number);
                 resultTyped = false;
                 return;
             }
-            if (SecondPartLabel.Text.Length == 1 && SecondPartLabel.Text[0] == '0' && number == 0)
+            if (SecondPartLabelYMG.Text.Length == 1 && SecondPartLabelYMG.Text[0] == '0' && number == 0)
             {
                 return;
             }
-            if (SecondPartLabel.Text.Length == 1 && SecondPartLabel.Text[0] == '0')
+            if (SecondPartLabelYMG.Text.Length == 1 && SecondPartLabelYMG.Text[0] == '0')
             {
-                SecondPartLabel.Text = Convert.ToString(number);
+                SecondPartLabelYMG.Text = Convert.ToString(number);
                 return;
             }
-            SecondPartLabel.Text = SecondPartLabel.Text + Convert.ToString(number);
+            SecondPartLabelYMG.Text = SecondPartLabelYMG.Text + Convert.ToString(number);
         }
 
         private void button0_Click(object sender, EventArgs e)
@@ -150,32 +150,32 @@ namespace Tyuiu.YaroslavtsevMG.Lab4
 
         private void InversButton_Click(object sender, EventArgs e)
         {
-            if (SecondPartLabel.Text.Length == 1 && SecondPartLabel.Text[0] == '0')
+            if (SecondPartLabelYMG.Text.Length == 1 && SecondPartLabelYMG.Text[0] == '0')
             {
                 return;
             }
-            if (SecondPartLabel.Text.Contains('-'))
+            if (SecondPartLabelYMG.Text.Contains('-'))
             {
-                SecondPartLabel.Text=SecondPartLabel.Text.Remove(0, 1);
+                SecondPartLabelYMG.Text=SecondPartLabelYMG.Text.Remove(0, 1);
                 return;
             }
-            SecondPartLabel.Text = "-" + SecondPartLabel.Text;
+            SecondPartLabelYMG.Text = "-" + SecondPartLabelYMG.Text;
         }
 
         private void OperatorPeakUp(operations peakedOperation)
         {
-            if (SecondPartLabel.Text.Length == 0) return;
+            if (SecondPartLabelYMG.Text.Length == 0) return;
             operation = peakedOperation;
             foreach (operations op in Enum.GetValues(typeof(operations)))
             {
-                if(resultTyped && FirstPartLabel.Text.Contains((char)op))
+                if(resultTyped && FirstPartLabelYMG.Text.Contains((char)op))
                 {
-                    FirstPartLabel.Text = FirstPartLabel.Text.Remove(FirstPartLabel.Text.Length-1, 1)+(char)operation;
+                    FirstPartLabelYMG.Text = FirstPartLabelYMG.Text.Remove(FirstPartLabelYMG.Text.Length-1, 1)+(char)operation;
                     return;
                 }
             }
-            firstOperand = Convert.ToDouble(SecondPartLabel.Text);
-            FirstPartLabel.Text= SecondPartLabel.Text+ (char)operation;
+            firstOperand = Convert.ToDouble(SecondPartLabelYMG.Text);
+            FirstPartLabelYMG.Text= SecondPartLabelYMG.Text+ (char)operation;
             resultTyped = true;
             
         }
@@ -212,28 +212,28 @@ namespace Tyuiu.YaroslavtsevMG.Lab4
 
         private void DelButton_Click(object sender, EventArgs e)
         {
-            if (SecondPartLabel.Text.Length <= 1)
+            if (SecondPartLabelYMG.Text.Length <= 1)
             {
-                SecondPartLabel.Text = "0";
+                SecondPartLabelYMG.Text = "0";
                 return;
             }
-            SecondPartLabel.Text = SecondPartLabel.Text.Remove(SecondPartLabel.Text.Length - 1, 1);
+            SecondPartLabelYMG.Text = SecondPartLabelYMG.Text.Remove(SecondPartLabelYMG.Text.Length - 1, 1);
         }
 
         private void CommaButton_Click(object sender, EventArgs e)
         {
             if (resultTyped)
             {
-                FirstPartLabel.Text = "";
-                SecondPartLabel.Text = "0,";
+                FirstPartLabelYMG.Text = "";
+                SecondPartLabelYMG.Text = "0,";
                 resultTyped = false;
                 return;
             }
-            if(SecondPartLabel.Text.Contains(','))
+            if(SecondPartLabelYMG.Text.Contains(','))
             {
                 return;
             }
-            SecondPartLabel.Text = SecondPartLabel.Text + ",";
+            SecondPartLabelYMG.Text = SecondPartLabelYMG.Text + ",";
         }
     }
 }

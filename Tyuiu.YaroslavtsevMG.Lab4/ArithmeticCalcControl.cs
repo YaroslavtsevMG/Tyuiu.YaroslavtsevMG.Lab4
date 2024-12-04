@@ -20,29 +20,29 @@ namespace Tyuiu.YaroslavtsevMG.Lab4
         public ArithmeticCalcControl()
         {
             InitializeComponent();
-            FirstPartLabel.Text = "";
-            SecondPartLabel.Text = "";
+            FirstPartLabelYMG.Text = "";
+            SecondPartLabelYMG.Text = "";
         }
 
         private void TypeNumber(int number)
         {
             if (resultTyped || constantTyped)
             {
-                SecondPartLabel.Text = Convert.ToString(number);
+                SecondPartLabelYMG.Text = Convert.ToString(number);
                 resultTyped = false;
                 constantTyped = false;
                 return;
             }
-            if (SecondPartLabel.Text.Length == 1 && SecondPartLabel.Text[0] == '0' && number == 0)
+            if (SecondPartLabelYMG.Text.Length == 1 && SecondPartLabelYMG.Text[0] == '0' && number == 0)
             {
                 return;
             }
-            if (SecondPartLabel.Text.Length == 1 && SecondPartLabel.Text[0] == '0')
+            if (SecondPartLabelYMG.Text.Length == 1 && SecondPartLabelYMG.Text[0] == '0')
             {
-                SecondPartLabel.Text = Convert.ToString(number);
+                SecondPartLabelYMG.Text = Convert.ToString(number);
                 return;
             }
-            SecondPartLabel.Text = SecondPartLabel.Text + Convert.ToString(number);
+            SecondPartLabelYMG.Text = SecondPartLabelYMG.Text + Convert.ToString(number);
         }
         private void button0_Click(object sender, EventArgs e)
         {
@@ -98,35 +98,35 @@ namespace Tyuiu.YaroslavtsevMG.Lab4
         {
             if (resultTyped)
             {
-                SecondPartLabel.Text = "0,";
+                SecondPartLabelYMG.Text = "0,";
                 resultTyped = false;
                 return;
             }
-            if (SecondPartLabel.Text.Contains(','))
+            if (SecondPartLabelYMG.Text.Contains(','))
             {
                 return;
             }
-            SecondPartLabel.Text = SecondPartLabel.Text + ",";
+            SecondPartLabelYMG.Text = SecondPartLabelYMG.Text + ",";
         }
 
         private void InversButton_Click(object sender, EventArgs e)
         {
-            if (SecondPartLabel.Text.Length == 1 && SecondPartLabel.Text[0] == '0')
+            if (SecondPartLabelYMG.Text.Length == 1 && SecondPartLabelYMG.Text[0] == '0')
             {
                 return;
             }
             if (equalTyped)
             {
-                SecondPartLabel.Text = "";
+                SecondPartLabelYMG.Text = "";
                 equalTyped = false;
             }
-            if (SecondPartLabel.Text.Contains("negative"))
+            if (SecondPartLabelYMG.Text.Contains("negative"))
             {
-                SecondPartLabel.Text = SecondPartLabel.Text.Remove(0, 9);
+                SecondPartLabelYMG.Text = SecondPartLabelYMG.Text.Remove(0, 9);
                 return;
             }
             
-            SecondPartLabel.Text = "negative " + SecondPartLabel.Text;
+            SecondPartLabelYMG.Text = "negative " + SecondPartLabelYMG.Text;
             resultTyped = false;
             constantTyped = false;
         }
@@ -135,22 +135,22 @@ namespace Tyuiu.YaroslavtsevMG.Lab4
         {
             if(resultTyped)
             {
-                var arr = FirstPartLabel.Text.Split(" ");
-                FirstPartLabel.Text = "";
+                var arr = FirstPartLabelYMG.Text.Split(" ");
+                FirstPartLabelYMG.Text = "";
                 for (int i=0;i<arr.Length-1;i++)
                 {
-                    FirstPartLabel.Text = FirstPartLabel.Text + arr[i]+" ";
+                    FirstPartLabelYMG.Text = FirstPartLabelYMG.Text + arr[i]+" ";
                 }
-                FirstPartLabel.Text = FirstPartLabel.Text + operatoration;
+                FirstPartLabelYMG.Text = FirstPartLabelYMG.Text + operatoration;
                 return;
             }
             if(operatoration=="cos" ||operatoration=="sin")
             {
-                FirstPartLabel.Text = FirstPartLabel.Text + " " + operatoration;
+                FirstPartLabelYMG.Text = FirstPartLabelYMG.Text + " " + operatoration;
                 resultTyped = true;
                 return;
             }
-            FirstPartLabel.Text = FirstPartLabel.Text + " " +SecondPartLabel.Text+ " " + operatoration;
+            FirstPartLabelYMG.Text = FirstPartLabelYMG.Text + " " +SecondPartLabelYMG.Text+ " " + operatoration;
             resultTyped = true;
         }
         private void PlusButton_Click(object sender, EventArgs e)
@@ -205,14 +205,14 @@ namespace Tyuiu.YaroslavtsevMG.Lab4
 
         private void PiButton_Click(object sender, EventArgs e)
         {
-            SecondPartLabel.Text = "pi";
+            SecondPartLabelYMG.Text = "pi";
             constantTyped = true;
             resultTyped = false;
         }
 
         private void ExpButton_Click(object sender, EventArgs e)
         {
-            SecondPartLabel.Text = "exp";
+            SecondPartLabelYMG.Text = "exp";
             constantTyped = true;
             resultTyped = false;
         }
@@ -221,31 +221,31 @@ namespace Tyuiu.YaroslavtsevMG.Lab4
         {
             if(constantTyped)
             {
-                SecondPartLabel.Text = "0";
+                SecondPartLabelYMG.Text = "0";
                 constantTyped = false;
                 return;
             }
-            if (SecondPartLabel.Text.Length <= 1)
+            if (SecondPartLabelYMG.Text.Length <= 1)
             {
-                SecondPartLabel.Text = "0";
-                if(FirstPartLabel.Text.Length==0)
+                SecondPartLabelYMG.Text = "0";
+                if(FirstPartLabelYMG.Text.Length==0)
                 {
                     return;
                 }
-                if (FirstPartLabel.Text[FirstPartLabel.Text.Length-1]=='(')
+                if (FirstPartLabelYMG.Text[FirstPartLabelYMG.Text.Length-1]=='(')
                 {
-                    FirstPartLabel.Text = FirstPartLabel.Text.Remove(FirstPartLabel.Text.Length - 1, 1);
+                    FirstPartLabelYMG.Text = FirstPartLabelYMG.Text.Remove(FirstPartLabelYMG.Text.Length - 1, 1);
                     countOpenBracket = countOpenBracket - 1;
                 }
-                else if (FirstPartLabel.Text[FirstPartLabel.Text.Length - 1] == ')')
+                else if (FirstPartLabelYMG.Text[FirstPartLabelYMG.Text.Length - 1] == ')')
                 {
-                    FirstPartLabel.Text = FirstPartLabel.Text.Remove(FirstPartLabel.Text.Length - 1, 1);
+                    FirstPartLabelYMG.Text = FirstPartLabelYMG.Text.Remove(FirstPartLabelYMG.Text.Length - 1, 1);
                     countCloseBracket = countCloseBracket - 1;
                 }
                 
                 return;
             }
-            SecondPartLabel.Text = SecondPartLabel.Text.Remove(SecondPartLabel.Text.Length - 1, 1);
+            SecondPartLabelYMG.Text = SecondPartLabelYMG.Text.Remove(SecondPartLabelYMG.Text.Length - 1, 1);
         }
 
         private void EqualButton_Click(object sender, EventArgs e)
@@ -254,21 +254,21 @@ namespace Tyuiu.YaroslavtsevMG.Lab4
             {
                 return;
             }
-            FirstPartLabel.Text = FirstPartLabel.Text + " " + SecondPartLabel.Text;
+            FirstPartLabelYMG.Text = FirstPartLabelYMG.Text + " " + SecondPartLabelYMG.Text;
             while(countOpenBracket>countCloseBracket)
             {
-                FirstPartLabel.Text = FirstPartLabel.Text + " )";
+                FirstPartLabelYMG.Text = FirstPartLabelYMG.Text + " )";
                 countCloseBracket = countCloseBracket + 1;
             }
             resultTyped = true;
             equalTyped = true;
-            SecondPartLabel.Text = FirstPartLabel.Text + " = " + ArithmeticCalc.Lib.ArithmeticCalc.CalcExpression(FirstPartLabel.Text);
-            FirstPartLabel.Text = "";
+            SecondPartLabelYMG.Text = FirstPartLabelYMG.Text + " = " + ArithmeticCalc.Lib.ArithmeticCalc.CalcExpression(FirstPartLabelYMG.Text);
+            FirstPartLabelYMG.Text = "";
         }
 
         private void OpenBracketButton_Click(object sender, EventArgs e)
         {
-            FirstPartLabel.Text = FirstPartLabel.Text + " (";
+            FirstPartLabelYMG.Text = FirstPartLabelYMG.Text + " (";
             countOpenBracket = countOpenBracket + 1;
             resultTyped = false;
         }
@@ -277,9 +277,9 @@ namespace Tyuiu.YaroslavtsevMG.Lab4
         {
             if(countOpenBracket>countCloseBracket)
             {
-                FirstPartLabel.Text = FirstPartLabel.Text +" "+ SecondPartLabel.Text + " )";
+                FirstPartLabelYMG.Text = FirstPartLabelYMG.Text +" "+ SecondPartLabelYMG.Text + " )";
                 countCloseBracket = countCloseBracket + 1;
-                SecondPartLabel.Text = "";
+                SecondPartLabelYMG.Text = "";
             }
         }
     }
