@@ -16,6 +16,7 @@ namespace Tyuiu.YaroslavtsevMG.Lab4
         private int countCloseBracket = 0;
         private bool resultTyped = true;
         private bool constantTyped = true;
+        private bool equalTyped = true;
         public ArithmeticCalcControl()
         {
             InitializeComponent();
@@ -114,12 +115,20 @@ namespace Tyuiu.YaroslavtsevMG.Lab4
             {
                 return;
             }
+            if (equalTyped)
+            {
+                SecondPartLabel.Text = "";
+                equalTyped = false;
+            }
             if (SecondPartLabel.Text.Contains("negative"))
             {
                 SecondPartLabel.Text = SecondPartLabel.Text.Remove(0, 9);
                 return;
             }
+            
             SecondPartLabel.Text = "negative " + SecondPartLabel.Text;
+            resultTyped = false;
+            constantTyped = false;
         }
 
         private void OperatorPeakUp(string operatoration)
@@ -246,6 +255,7 @@ namespace Tyuiu.YaroslavtsevMG.Lab4
                 countCloseBracket = countCloseBracket + 1;
             }
             resultTyped = true;
+            equalTyped = true;
             SecondPartLabel.Text = FirstPartLabel.Text + " = " + ArithmeticCalc.Lib.ArithmeticCalc.CalcExpression(FirstPartLabel.Text);
             FirstPartLabel.Text = "";
         }
