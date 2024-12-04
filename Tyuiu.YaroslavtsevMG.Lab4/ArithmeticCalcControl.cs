@@ -144,6 +144,12 @@ namespace Tyuiu.YaroslavtsevMG.Lab4
                 FirstPartLabel.Text = FirstPartLabel.Text + operatoration;
                 return;
             }
+            if(operatoration=="cos" ||operatoration=="sin")
+            {
+                FirstPartLabel.Text = FirstPartLabel.Text + " " + operatoration;
+                resultTyped = true;
+                return;
+            }
             FirstPartLabel.Text = FirstPartLabel.Text + " " +SecondPartLabel.Text+ " " + operatoration;
             resultTyped = true;
         }
@@ -264,6 +270,7 @@ namespace Tyuiu.YaroslavtsevMG.Lab4
         {
             FirstPartLabel.Text = FirstPartLabel.Text + " (";
             countOpenBracket = countOpenBracket + 1;
+            resultTyped = false;
         }
 
         private void CloseBracketButton_Click(object sender, EventArgs e)
