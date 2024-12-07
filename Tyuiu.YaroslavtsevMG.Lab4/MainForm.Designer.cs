@@ -95,7 +95,7 @@
             SideBarPanel.Controls.Add(TopBottonPanel);
             SideBarPanel.Location = new Point(200, 0);
             SideBarPanel.Name = "SideBarPanel";
-            SideBarPanel.Size = new Size(200, 451);
+            SideBarPanel.Size = new Size(200, 231);
             SideBarPanel.TabIndex = 4;
             // 
             // BotButtonsPanel
@@ -104,7 +104,7 @@
             BotButtonsPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             BotButtonsPanel.Controls.Add(AboutButtonYMG, 0, 0);
             BotButtonsPanel.Dock = DockStyle.Bottom;
-            BotButtonsPanel.Location = new Point(0, 393);
+            BotButtonsPanel.Location = new Point(0, 173);
             BotButtonsPanel.Name = "BotButtonsPanel";
             BotButtonsPanel.RowCount = 1;
             BotButtonsPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));

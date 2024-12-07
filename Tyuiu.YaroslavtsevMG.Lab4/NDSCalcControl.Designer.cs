@@ -197,6 +197,8 @@
             // 
             ResultSummaNDSLabel.AutoSize = true;
             ResultSummaNDSLabel.Dock = DockStyle.Fill;
+            ResultSummaNDSLabel.Font = new Font("Segoe UI", 15.75F);
+            ResultSummaNDSLabel.ForeColor = SystemColors.ControlLightLight;
             ResultSummaNDSLabel.Location = new Point(3, 402);
             ResultSummaNDSLabel.Name = "ResultSummaNDSLabel";
             ResultSummaNDSLabel.Size = new Size(601, 134);
@@ -207,6 +209,8 @@
             // 
             SummaWithNDSLabel.AutoSize = true;
             SummaWithNDSLabel.Dock = DockStyle.Fill;
+            SummaWithNDSLabel.Font = new Font("Segoe UI", 15.75F);
+            SummaWithNDSLabel.ForeColor = SystemColors.ControlLightLight;
             SummaWithNDSLabel.Location = new Point(3, 536);
             SummaWithNDSLabel.Name = "SummaWithNDSLabel";
             SummaWithNDSLabel.Size = new Size(601, 138);
@@ -325,6 +329,8 @@
             // 
             ResultNDSLabel.AutoSize = true;
             ResultNDSLabel.Dock = DockStyle.Fill;
+            ResultNDSLabel.Font = new Font("Segoe UI", 15.75F);
+            ResultNDSLabel.ForeColor = SystemColors.ControlLightLight;
             ResultNDSLabel.Location = new Point(3, 402);
             ResultNDSLabel.Name = "ResultNDSLabel";
             ResultNDSLabel.Size = new Size(601, 134);
@@ -335,6 +341,8 @@
             // 
             SummaWithoutNDSLabel.AutoSize = true;
             SummaWithoutNDSLabel.Dock = DockStyle.Fill;
+            SummaWithoutNDSLabel.Font = new Font("Segoe UI", 15.75F);
+            SummaWithoutNDSLabel.ForeColor = SystemColors.ControlLightLight;
             SummaWithoutNDSLabel.Location = new Point(3, 536);
             SummaWithoutNDSLabel.Name = "SummaWithoutNDSLabel";
             SummaWithoutNDSLabel.Size = new Size(601, 138);
